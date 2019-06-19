@@ -1,0 +1,122 @@
+,kingdom,phylum,class,order,family,genus,species,query
+1,Plantae,Tracheophyta,Magnoliopsida,Malpighiales,Euphorbiaceae,Dalechampia,Dalechampia bernieri,Dalechampia bernieri
+2,Plantae,Tracheophyta,Magnoliopsida,Malpighiales,Euphorbiaceae,Dalechampia,Dalechampia aristolochiifolia,Dalechampia aristolochiifolia
+3,Plantae,Tracheophyta,Magnoliopsida,Malpighiales,Euphorbiaceae,Dalechampia,Dalechampia brevicolumna,Dalechampia brevicolumna
+4,Plantae,Tracheophyta,Magnoliopsida,Malpighiales,Euphorbiaceae,Dalechampia,Dalechampia brownsbergensis,Dalechampia brownsbergensis
+5,Plantae,Tracheophyta,Magnoliopsida,Malpighiales,Euphorbiaceae,Dalechampia,Dalechampia canescens,Dalechampia canescens
+6,Plantae,Tracheophyta,Magnoliopsida,Malpighiales,Euphorbiaceae,Dalechampia,Dalechampia dioscoreifolia,Dalechampia dioscoreifolia
+7,Plantae,Tracheophyta,Magnoliopsida,Malpighiales,Euphorbiaceae,Dalechampia,Dalechampia cissifolia,Dalechampia heteromorpha
+8,Plantae,Tracheophyta,Magnoliopsida,Malpighiales,Euphorbiaceae,Dalechampia,Dalechampia juruana,Dalechampia juruana
+9,Plantae,Tracheophyta,Magnoliopsida,Malpighiales,Euphorbiaceae,Dalechampia,Dalechampia magnistipulata,Dalechampia magnistipulata 
+10,Plantae,Tracheophyta,Magnoliopsida,Malpighiales,Euphorbiaceae,Dalechampia,Dalechampia magnoliifolia,Dalechampia magnoliifolia
+11,Plantae,Tracheophyta,Magnoliopsida,Malpighiales,Euphorbiaceae,Dalechampia,Dalechampia parvibracteata,Dalechampia parvibracteata
+12,Plantae,Tracheophyta,Magnoliopsida,Malpighiales,Euphorbiaceae,Dalechampia,Dalechampia scandens,Dalechampia parvifolia
+13,Plantae,Tracheophyta,Magnoliopsida,Malpighiales,Euphorbiaceae,Dalechampia,Dalechampia pernambucensis,Dalechampia pernambucensis
+14,Plantae,Tracheophyta,Magnoliopsida,Malpighiales,Euphorbiaceae,Dalechampia,Dalechampia scandens,Dalechampia scandens 
+15,Plantae,Tracheophyta,Magnoliopsida,Malpighiales,Euphorbiaceae,Dalechampia,Dalechampia schippii,Dalechampia schippii
+16,Plantae,Tracheophyta,Magnoliopsida,Malpighiales,Euphorbiaceae,Dalechampia,Dalechampia schottii,Dalechampia schottii
+17,Plantae,Tracheophyta,Magnoliopsida,Malpighiales,Euphorbiaceae,Dalechampia,Dalechampia spathulata,Dalechampia spathulata
+18,Plantae,Tracheophyta,Magnoliopsida,Malpighiales,Euphorbiaceae,Dalechampia,Dalechampia stipulacea,Dalechampia stipulacea
+19,Plantae,Tracheophyta,Magnoliopsida,Malpighiales,Euphorbiaceae,Dalechampia,Dalechampia subternata,Dalechampia subternata
+20,Plantae,Tracheophyta,Magnoliopsida,Malpighiales,Euphorbiaceae,Dalechampia,Dalechampia tiliifolia,Dalechampia tiliifolia
+21,Plantae,Tracheophyta,Magnoliopsida,Malpighiales,Euphorbiaceae,Dalechampia,Dalechampia capensis,Dalechampia volubilis
+22,Plantae,Tracheophyta,Magnoliopsida,Malpighiales,Euphorbiaceae,Dalechampia,Dalechampia websteri,Dalechampia websteri
+23,Plantae,Tracheophyta,Polypodiopsida,Polypodiales,Dryopteridaceae,Dryopteris,Dryopteris fragrans,Dryopteris fragrans
+24,Plantae,Tracheophyta,Magnoliopsida,Fagales,Betulaceae,Alnus,Alnus alnobetula,Alnus crispa
+25,Plantae,Tracheophyta,Magnoliopsida,Fagales,Betulaceae,Alnus,Alnus incana,Alnus tenuifolia
+26,Plantae,Tracheophyta,Magnoliopsida,Fagales,Betulaceae,Betula,Betula nana,Betula nana
+27,Plantae,Tracheophyta,Magnoliopsida,Boraginales,Boraginaceae,Eritrichium,Eritrichium splendens,Eritrichium splendens
+28,Plantae,Tracheophyta,Magnoliopsida,Caryophyllales,Caryophyllaceae,Dianthus,Dianthus repens,Dianthus repens
+29,Plantae,Tracheophyta,Magnoliopsida,Caryophyllales,Caryophyllaceae,Silene,Silene acaulis,Silene acaulis
+30,Plantae,Tracheophyta,Magnoliopsida,Asterales,Asteraceae,Arnica,Arnica griscomii,Arnica frigida
+31,Plantae,Tracheophyta,Magnoliopsida,Asterales,Asteraceae,Artemisia,Artemisia senjavinensis,Artemisia senjavinensis
+32,Plantae,Tracheophyta,Magnoliopsida,Asterales,Asteraceae,Saussurea,Saussurea angustifolia,Saussurea angustifolia
+33,Plantae,Tracheophyta,Magnoliopsida,Asterales,Asteraceae,Packera,Packera ogotorukensis,Senecio ogotorukensis
+34,Plantae,Tracheophyta,Magnoliopsida,Asterales,Asteraceae,Senecio,Senecio pauciflorus,Senecio pauciflorus
+35,Plantae,Tracheophyta,Magnoliopsida,Brassicales,Brassicaceae,Arabis,NA,Arabis Lemmoni
+36,Plantae,Tracheophyta,Magnoliopsida,Brassicales,Brassicaceae,Draba,NA,Draba Murrayi
+37,Plantae,Tracheophyta,Magnoliopsida,Brassicales,Brassicaceae,Physaria,Physaria arctica,Lesquerella arctica
+38,Plantae,Tracheophyta,Magnoliopsida,Brassicales,Brassicaceae,Smelowskia,Smelowskia calycina,Smelowskia calycina
+39,Plantae,Tracheophyta,Liliopsida,Poales,Cyperaceae,Eriophorum,Eriophorum vaginatum,Eriophorum vaginatum
+40,Plantae,Tracheophyta,Magnoliopsida,Boraginales,Hydrophyllaceae,Romanzoffia,Romanzoffia sitchensis,Romanzoffia sitchensis
+41,Plantae,Tracheophyta,Magnoliopsida,Fabales,Fabaceae,Oxytropis,Oxytropis kobukensis,Oxytropis kobukensis
+42,Plantae,Tracheophyta,Magnoliopsida,Fabales,Fabaceae,Oxytropis,Oxytropis nigrescens,Oxytropis nigrescens
+43,Plantae,Tracheophyta,Magnoliopsida,Ranunculales,Papaveraceae,Papaver,NA,Papaver
+44,Plantae,Tracheophyta,Magnoliopsida,Ericales,Polemoniaceae,Phlox,Phlox richardsonii,Phlox alaskensis
+45,Plantae,Tracheophyta,Magnoliopsida,Caryophyllales,Montiaceae,Claytonia,NA,Claytonia
+46,Plantae,Tracheophyta,Magnoliopsida,Rosales,Rosaceae,Potentilla,Potentilla fragiformis,Potentilla fragiformis
+47,Plantae,Tracheophyta,Magnoliopsida,Rosales,Rosaceae,Potentilla,NA,Potentilla
+48,Plantae,Tracheophyta,Magnoliopsida,Malpighiales,Salicaceae,Salix,Salix arctica,Salix arctica
+49,Plantae,Tracheophyta,Magnoliopsida,Malpighiales,Salicaceae,Salix,Salix polaris,Salix polaris
+50,Plantae,Tracheophyta,Magnoliopsida,Saxifragales,Saxifragaceae,Saxifraga,Saxifraga bronchialis,Saxifraga bronchialis
+51,Plantae,Tracheophyta,Magnoliopsida,Lamiales,Plantaginaceae,Penstemon,NA,Penstemon Gormani
+52,Plantae,Tracheophyta,Magnoliopsida,Malpighiales,Violaceae,Viola,Viola epipsila,Viola epipsila
+53,Plantae,Tracheophyta,Liliopsida,Asparagales,Amaryllidaceae,Crinum,Crinum asiaticum,Crinium asiaticum
+54,Plantae,Tracheophyta,Magnoliopsida,Magnoliales,Annonaceae,Annona,NA,Annona
+55,Plantae,Tracheophyta,Magnoliopsida,Gentianales,Apocynaceae,Adenium,Adenium obesum,Adenium obesum
+56,Plantae,Tracheophyta,Liliopsida,Alismatales,Araceae,Aglaonema,Aglaonema commutatum,Aglaonema commutatum
+57,Plantae,Tracheophyta,Liliopsida,Alismatales,Araceae,Philodendron,NA,Philodendrum erubescens
+58,Plantae,Tracheophyta,Pinopsida,Pinales,Araucariaceae,Araucaria,NA,Araucaria
+59,Plantae,Tracheophyta,Liliopsida,Arecales,Arecaceae,Phoenix,Phoenix dactylifera,Phoenix dactylifera
+60,Plantae,Tracheophyta,Magnoliopsida,Gentianales,Apocynaceae,Dischidia,Dischidia rafflesiana,Dischidia rafflesiana
+61,Plantae,Tracheophyta,Magnoliopsida,Gentianales,Apocynaceae,Fockea,Fockea capensis,Fockea capensis
+62,Plantae,Tracheophyta,Magnoliopsida,Gentianales,Apocynaceae,Hoya,NA,Hoya Kerrii
+63,Plantae,Tracheophyta,Magnoliopsida,Gentianales,Apocynaceae,Hoya,Hoya multiflora,Hoya multiflora
+64,Plantae,Tracheophyta,Magnoliopsida,Gentianales,Apocynaceae,Ceropegia,Ceropegia gigantea,Stapelia gigantea
+65,Plantae,Tracheophyta,Magnoliopsida,Gentianales,Apocynaceae,Stapelia,NA,Stapelia variegata 
+66,Plantae,Tracheophyta,Liliopsida,Asparagales,Asparagaceae,Agave,NA,Agave
+67,Plantae,Tracheophyta,Liliopsida,Asparagales,Asparagaceae,Asparagus,Asparagus densiflorus,Asparagus densiflorus 
+68,Plantae,Tracheophyta,Liliopsida,Asparagales,Asparagaceae,Yucca,NA,Yucca
+69,Plantae,Tracheophyta,Magnoliopsida,Cucurbitales,Begoniaceae,Begonia,Begonia cucullata,Begonia semperflorens
+70,Plantae,Tracheophyta,Magnoliopsida,Malvales,Malvaceae,Ceiba,Ceiba speciosa,Chorisia speciosa
+71,Plantae,Tracheophyta,Liliopsida,Poales,Bromeliaceae,Billbergia,Billbergia pyramidalis,Billbergia pyramidalis
+72,Plantae,Tracheophyta,Liliopsida,Poales,Bromeliaceae,Tillandsia,Tillandsia bulbosa,Tillandsia bulbosa
+73,Plantae,Tracheophyta,Liliopsida,Poales,Bromeliaceae,Tillandsia,Tillandsia ionantha,Tillandsia ionantha
+74,Plantae,Tracheophyta,Liliopsida,Poales,Bromeliaceae,Tillandsia,Tillandsia stricta,Tillandsia stricta
+75,Plantae,Tracheophyta,Magnoliopsida,Caryophyllales,Cactaceae,Epiphyllum,NA,Epiphyllum 
+76,Plantae,Tracheophyta,Magnoliopsida,Caryophyllales,Cactaceae,Pereskia,Pereskia aculeata,Pereskia aculeata
+77,Plantae,Tracheophyta,Magnoliopsida,Caryophyllales,Cactaceae,Rhipsalis,NA,Zygocactus
+78,Plantae,Tracheophyta,Magnoliopsida,Caryophyllales,Caryophyllaceae,Silene,Silene vulgaris,Silene vulgaris
+79,Plantae,Tracheophyta,Magnoliopsida,Malpighiales,Clusiaceae,Clusia,NA,Clusia
+80,Plantae,Tracheophyta,Liliopsida,Commelinales,Commelinaceae,Tradescantia,Tradescantia spathacea,Rhoeo spathacea
+81,Plantae,Tracheophyta,Liliopsida,Commelinales,Commelinaceae,Tradescantia,NA,Rhoeo
+82,Plantae,Tracheophyta,Magnoliopsida,Saxifragales,Crassulaceae,Kalanchoe,NA,Kalanchoe
+83,Plantae,Tracheophyta,Cycadopsida,Cycadales,Cycadaceae,Cycas,NA,Cycas
+84,Plantae,Tracheophyta,Liliopsida,Dioscoreales,Dioscoreaceae,Dioscorea,Dioscorea bulbifera,Dioscorea bulbifera
+85,Plantae,Tracheophyta,Magnoliopsida,Caryophyllales,Droseraceae,Dionaea,Dionaea muscipula,Dionaea muscipula 
+86,Plantae,Tracheophyta,Magnoliopsida,Caryophyllales,Droseraceae,Drosera,Drosera capensis,Drosera capensis
+87,Plantae,Tracheophyta,Equisetopsida,Equisetales,Equisetaceae,Equisetum,Equisetum hyemale,Equisetum hyemale 
+88,Plantae,Tracheophyta,Magnoliopsida,Malpighiales,Euphorbiaceae,Codiaeum,NA,Codiaeum
+89,Plantae,Tracheophyta,Magnoliopsida,Malpighiales,Euphorbiaceae,Euphorbia,Euphorbia greenwayi,Euphorbia greenwayi
+90,Plantae,Tracheophyta,Magnoliopsida,Malpighiales,Euphorbiaceae,Euphorbia,Euphorbia leuconeura,Euphorbia leuconeura
+91,Plantae,Tracheophyta,Magnoliopsida,Malpighiales,Euphorbiaceae,Euphorbia,Euphorbia trigona,Euphorbia trigona 
+92,Plantae,Tracheophyta,Magnoliopsida,Fabales,Fabaceae,Acacia,NA,Acacia
+93,Plantae,Tracheophyta,Magnoliopsida,Geraniales,Geraniaceae,Pelargonium,NA,Pelargonium
+94,Plantae,Tracheophyta,Magnoliopsida,Fabales,Fabaceae,Mimosa,Mimosa pudica,Mimosa pudica
+95,Plantae,Tracheophyta,Liliopsida,Asparagales,Asphodelaceae,Aloe,NA,Aloe
+96,Plantae,Tracheophyta,Liliopsida,Asparagales,Asparagaceae,Chlorophytum,NA,Chlorophytum
+97,Plantae,Tracheophyta,Liliopsida,Asparagales,Asparagaceae,Cordyline,NA,Cordyline
+98,Plantae,Tracheophyta,Liliopsida,Asparagales,Asphodelaceae,Haworthiopsis,Haworthiopsis fasciata,Haworthia fasciata
+99,Plantae,Tracheophyta,Liliopsida,Asparagales,Asparagaceae,Sansevieria,Sansevieria cylindrica,Sansevieria cylindrica
+100,Plantae,Tracheophyta,Liliopsida,Asparagales,Asparagaceae,Sansevieria,Sansevieria trifasciata,Sansevieria trifasciata
+101,Plantae,Tracheophyta,Magnoliopsida,Rosales,Moraceae,Ficus,Ficus deltoidea,Ficus diversifolia
+102,Plantae,Tracheophyta,Liliopsida,Zingiberales,Strelitziaceae,Strelitzia,Strelitzia reginae,Strelitzia reginae
+103,Plantae,Tracheophyta,Magnoliopsida,Malpighiales,Ochnaceae,Ochna,Ochna multiflora,Ochna multiflora
+104,Plantae,Tracheophyta,Liliopsida,Asparagales,Orchidaceae,Coryanthes,Coryanthes maculata,Coryanthes maculata
+105,Plantae,Tracheophyta,Liliopsida,Asparagales,Orchidaceae,Epidendrum,Epidendrum radicans,Epidendrum radicans
+106,Plantae,Tracheophyta,Liliopsida,Asparagales,Orchidaceae,Ludisia,Ludisia discolor,Haemaria discolor
+107,Plantae,Tracheophyta,Liliopsida,Asparagales,Orchidaceae,Phalaenopsis,Phalaenopsis pulcherrima,Phalaenopsis pulcherrima
+108,Plantae,Tracheophyta,Liliopsida,Asparagales,Orchidaceae,Vanilla,Vanilla planifolia,Vanilla planifolia
+109,Plantae,Tracheophyta,Polypodiopsida,Polypodiales,Davalliaceae,Davallia,Davallia trichomanoides,Davallia trichomanoides
+110,Plantae,Tracheophyta,Polypodiopsida,Polypodiales,Lomariopsidaceae,Nephrolepis,Nephrolepis exaltata,Nephrolepsis exaltata
+111,Plantae,Tracheophyta,Polypodiopsida,Polypodiales,Polypodiaceae,Platycerium,NA,Platycerium
+112,Plantae,Tracheophyta,Psilotopsida,Psilotales,Psilotaceae,Psilotum,Psilotum nudum,Psilotum nudum
+113,Plantae,Tracheophyta,Magnoliopsida,Gentianales,Rubiaceae,Coffea,NA,Coffea
+114,Plantae,Tracheophyta,Magnoliopsida,Sapindales,Rutaceae,Citrus,NA,Citrus 
+115,Plantae,Tracheophyta,Magnoliopsida,Ericales,Sarraceniaceae,Darlingtonia,Darlingtonia californica,Darlingtonia californica
+116,Plantae,Tracheophyta,Magnoliopsida,Ericales,Sarraceniaceae,Sarracenia,Sarracenia purpurea,Sarracenia purpurea
+117,Plantae,Tracheophyta,Magnoliopsida,Solanales,Solanaceae,Withania,Withania somnifera,Withania somnifera
+118,Plantae,Tracheophyta,Magnoliopsida,Rosales,Urticaceae,Procris,Procris repens,Pellionia daveauana 
+119,Plantae,Tracheophyta,Magnoliopsida,Lamiales,Lamiaceae,Clerodendrum,Clerodendrum thomsoniae,Clerodendrum thomsoniae
+120,Plantae,Tracheophyta,Magnoliopsida,Vitales,Vitaceae,Cissus,Cissus quadrangularis,Cissus quadrangularis 
+121,Plantae,Tracheophyta,Liliopsida,Zingiberales,Zingiberaceae,Hedychium,Hedychium coronarium,Hedychium coronarium

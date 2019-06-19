@@ -1,0 +1,274 @@
+,kingdom,phylum,class,order,family,genus,kingdom_id,phylum_id,class_id,order_id,family_id,genus_id,species,species_id,query
+1,Plantae,Tracheophyta,Magnoliopsida,Malvales,Malvaceae,Abutilon,6,7707728,220,941,6685,3152599,NA,NA,Abutilon
+2,Plantae,Tracheophyta,Magnoliopsida,Lamiales,Gesneriaceae,Achimenes,6,7707728,220,408,6654,3233488,NA,NA,Achimenes
+3,Plantae,Tracheophyta,Polypodiopsida,Polypodiales,Pteridaceae,Adiantum,6,7707728,7228684,392,2367,2650796,Adiantum tenerum,2651834,Adiantum tenerum
+4,Plantae,Tracheophyta,Liliopsida,Poales,Bromeliaceae,Aechmea,6,7707728,196,1369,3740,2697812,Aechmea calyculata,2698107,Aechmea calyculata
+5,Plantae,Tracheophyta,Liliopsida,Poales,Bromeliaceae,Aechmea,6,7707728,196,1369,3740,2697812,Aechmea fasciata,2698346,Aechmea fasciata
+6,Plantae,Tracheophyta,Liliopsida,Poales,Bromeliaceae,Aechmea,6,7707728,196,1369,3740,2697812,Aechmea fulgens,2698412,Aechmea fulgens 
+7,Plantae,Tracheophyta,Liliopsida,Poales,Bromeliaceae,Aechmea,6,7707728,196,1369,3740,2697812,Aechmea racinae,2698084,Aechmea racinae
+8,Plantae,Tracheophyta,Magnoliopsida,Saxifragales,Crassulaceae,Aeonium,6,7707728,220,7219248,2406,2985681,Aeonium decorum,7334101,Aeonium decorum
+9,Plantae,Tracheophyta,Magnoliopsida,Saxifragales,Crassulaceae,Aeonium,6,7707728,220,7219248,2406,2985681,Aeonium haworthii,2985683,Aeonium haworthii
+10,Plantae,Tracheophyta,Magnoliopsida,Lamiales,Gesneriaceae,Aeschynanthus,6,7707728,220,408,6654,6365037,Aeschynanthus pulcher,3824839,Aeschynanthus javanicus
+11,Plantae,Tracheophyta,Liliopsida,Asparagales,Asparagaceae,Agave,6,7707728,196,1169,7683,2766430,Agave americana,2767031,Agave americana
+12,Plantae,Tracheophyta,Liliopsida,Alismatales,Araceae,Aglaonema,6,7707728,196,551,6979,2866350,Aglaonema commutatum,2866467,Aglaonema commutatum
+13,Plantae,Tracheophyta,Liliopsida,Alismatales,Araceae,Aglaonema,6,7707728,196,551,6979,2866350,Aglaonema modestum,2866488,Aglaonema modestum
+14,Plantae,Tracheophyta,Liliopsida,Asparagales,Asphodelaceae,Aloe,6,7707728,196,1169,4259209,2770879,Aloe arborescens,2777537,Aloe arborescens
+15,Plantae,Tracheophyta,Liliopsida,Asparagales,Asphodelaceae,Aloidendron,6,7707728,196,1169,4259209,9547395,Aloidendron barberae,9444837,Aloe bainesii
+16,Plantae,Tracheophyta,Liliopsida,Asparagales,Asphodelaceae,Aloe,6,7707728,196,1169,4259209,2770879,Aloe vera,2777724,Aloe barbadensis
+17,Plantae,Tracheophyta,Liliopsida,Asparagales,Asphodelaceae,Aloiampelos,6,7707728,196,1169,4259209,9431070,Aloiampelos ciliaris,9527904,Aloe ciliaris
+18,Plantae,Tracheophyta,Liliopsida,Asparagales,Asphodelaceae,Aloe,6,7707728,196,1169,4259209,2770879,Aloe ferox,2777789,Aloe ferox
+19,Plantae,Tracheophyta,Liliopsida,Asparagales,Asphodelaceae,Aloe,6,7707728,196,1169,4259209,2770879,Aloe marlothii,2778219,Aloe marlothii
+20,Plantae,Tracheophyta,Liliopsida,Asparagales,Asphodelaceae,Aloidendron,6,7707728,196,1169,4259209,9547395,Aloidendron pillansii,9372012,Aloe pillansii
+21,Plantae,Tracheophyta,Liliopsida,Asparagales,Asphodelaceae,Aloe,6,7707728,196,1169,4259209,2770879,Aloe striata,2778035,Aloe striata
+22,Plantae,Tracheophyta,Liliopsida,Zingiberales,Zingiberaceae,Alpinia,6,7707728,196,627,4687,7906850,Alpinia vittata,5302160,Alpinia sanderae
+23,Plantae,Tracheophyta,Liliopsida,Poales,Bromeliaceae,Ananas,6,7707728,196,1369,3740,2699430,Ananas comosus,5288819,Ananas comosus
+24,Plantae,Tracheophyta,Liliopsida,Asparagales,Orchidaceae,Ansellia,6,7707728,196,1169,7689,2842139,Ansellia africana,2842140,Ansellia africana
+25,Plantae,Tracheophyta,Liliopsida,Alismatales,Araceae,Anthurium,6,7707728,196,551,6979,2872218,Anthurium andraeanum,2872695,Anthurium andraeanum
+26,Plantae,Tracheophyta,Magnoliopsida,Lamiales,Acanthaceae,Aphelandra,6,7707728,220,408,2393,3173228,Aphelandra squarrosa,7263987,Aphelandra squarrosa
+27,Plantae,Tracheophyta,Pinopsida,Pinales,Araucariaceae,Araucaria,6,7707728,194,640,3924,2684910,Araucaria heterophylla,2684969,Araucaria heterophylla
+28,Plantae,Tracheophyta,Magnoliopsida,Ericales,Primulaceae,Ardisia,6,7707728,220,1353,6674,3169458,Ardisia crenata,5414379,Ardisia crenata
+29,Plantae,Tracheophyta,Magnoliopsida,Piperales,Aristolochiaceae,Aristolochia,6,7707728,220,404,3066,2873978,Aristolochia elegans,2874004,Aristolochia elegans
+30,Plantae,Tracheophyta,Magnoliopsida,Gentianales,Apocynaceae,Asclepias,6,7707728,220,412,6701,3170229,NA,NA,Asclepias
+31,Plantae,Tracheophyta,Liliopsida,Asparagales,Asparagaceae,Asparagus,6,7707728,196,1169,7683,9527393,Asparagus densiflorus,2768503,Asparagus densiflorus
+32,Plantae,Tracheophyta,Liliopsida,Asparagales,Asparagaceae,Asparagus,6,7707728,196,1169,7683,9527393,Asparagus setaceus,2768686,Asparagus setaceus
+33,Plantae,Tracheophyta,Polypodiopsida,Polypodiales,Aspleniaceae,Asplenium,6,7707728,7228684,392,6625,2650583,Asplenium nidus,2650676,Asplenium nidus
+34,Plantae,Tracheophyta,Magnoliopsida,Caryophyllales,Cactaceae,Astrophytum,6,7707728,220,422,2519,8166122,Astrophytum myriostigma,7282451,Astrophytum myriostigma
+35,Plantae,Tracheophyta,Magnoliopsida,Caryophyllales,Cactaceae,Astrophytum,6,7707728,220,422,2519,8166122,Astrophytum ornatum,7282413,Astrophytum ornatum
+36,Plantae,Tracheophyta,Polypodiopsida,Salviniales,Salviniaceae,Azolla,6,7707728,7228684,7229405,6629,2650103,Azolla caroliniana,2650105,Azolla carolinana
+37,Plantae,Tracheophyta,Magnoliopsida,Cucurbitales,Begoniaceae,Begonia,6,7707728,220,7224005,6638,2874710,NA,NA,Begonia
+38,Plantae,Tracheophyta,Magnoliopsida,Cucurbitales,Begoniaceae,Begonia,6,7707728,220,7224005,6638,2874710,Begonia coccinea,2874715,Begonia coccinea
+39,Plantae,Tracheophyta,Magnoliopsida,Cucurbitales,Begoniaceae,Begonia,6,7707728,220,7224005,6638,2874710,Begonia foliosa,2874711,Begonia foliosa
+40,Plantae,Tracheophyta,Magnoliopsida,Cucurbitales,Begoniaceae,Begonia,6,7707728,220,7224005,6638,2874710,Begonia masoniana,7303407,Begonia masoniana
+41,Plantae,Tracheophyta,Magnoliopsida,Cucurbitales,Begoniaceae,Begonia,6,7707728,220,7224005,6638,2874710,Begonia minor,4157965,Begonia minor
+42,Plantae,Tracheophyta,Magnoliopsida,Cucurbitales,Begoniaceae,Begonia,6,7707728,220,7224005,6638,2874710,Begonia ulmifolia,2874713,Begonia ulmifolia
+43,Plantae,Tracheophyta,Magnoliopsida,Lamiales,Acanthaceae,Justicia,6,7707728,220,408,2393,2904597,NA,NA,Beloperone
+44,Plantae,Tracheophyta,Liliopsida,Poales,Bromeliaceae,Billbergia,6,7707728,196,1369,3740,2693699,Billbergia distachia,7289469,Billbergia distachia
+45,Plantae,Tracheophyta,Liliopsida,Poales,Bromeliaceae,Billbergia,6,7707728,196,1369,3740,2693699,NA,NA,Billbergia nidularium
+46,Plantae,Tracheophyta,Liliopsida,Poales,Bromeliaceae,Billbergia,6,7707728,196,1369,3740,2693699,Billbergia nutans,2693788,Billbergia nutans
+47,Plantae,Tracheophyta,Liliopsida,Poales,Bromeliaceae,Billbergia,6,7707728,196,1369,3740,2693699,Billbergia pyramidalis,2693754,Billbergia pyramidalis 
+48,Plantae,Tracheophyta,Liliopsida,Poales,Bromeliaceae,Billbergia,6,7707728,196,1369,3740,2693699,NA,NA,Billbergia saundersii
+49,Plantae,Tracheophyta,Liliopsida,Poales,Bromeliaceae,Billbergia,6,7707728,196,1369,3740,2693699,Billbergia zebrina,2693714,Billbergia zebrina
+50,Plantae,Tracheophyta,Magnoliopsida,Caryophyllales,Nyctaginaceae,Bougainvillea,6,7707728,220,422,6718,3086089,Bougainvillea spectabilis,7167078,Bougainvillea spectabilis
+51,Plantae,Tracheophyta,Liliopsida,Asparagales,Orchidaceae,Brassavola,6,7707728,196,1169,7689,2815993,NA,NA,Brassavola
+52,Plantae,Tracheophyta,Magnoliopsida,Sapindales,Burseraceae,Bursera,6,7707728,220,933,6659,3190446,Bursera fagaroides,3190449,Bursera fagaroides
+53,Plantae,Tracheophyta,Liliopsida,Asparagales,Orchidaceae,Calanthe,6,7707728,196,1169,7689,2794881,NA,NA,Calanthe
+54,Plantae,Tracheophyta,Liliopsida,Asparagales,Orchidaceae,Calanthe,6,7707728,196,1169,7689,2794881,NA,NA,Calanthe pavlova
+55,Plantae,Tracheophyta,Liliopsida,Asparagales,Orchidaceae,Calanthe,6,7707728,196,1169,7689,2794881,Calanthe vestita,2795000,Calanthe vestita
+56,Plantae,Tracheophyta,Liliopsida,Zingiberales,Marantaceae,Calathea,6,7707728,196,627,8784,8394666,NA,NA,Calathea
+57,Plantae,Tracheophyta,Liliopsida,Zingiberales,Marantaceae,Calathea,6,7707728,196,627,8784,8394666,NA,NA,Calathea insignis
+58,Plantae,Tracheophyta,Liliopsida,Commelinales,Commelinaceae,Callisia,6,7707728,196,553,2763195,2763692,Callisia gentlei,5303427,Callisia elegans
+59,Plantae,Tracheophyta,Magnoliopsida,Ericales,Theaceae,Camellia,6,7707728,220,1353,3189597,3189634,Camellia japonica,3189636,Camellia japonica
+60,Plantae,Tracheophyta,Magnoliopsida,Ericales,Theaceae,Camellia,6,7707728,220,1353,3189597,3189634,Camellia oleifera,8307542,Camellia sasanqua
+61,Plantae,Tracheophyta,Liliopsida,Asparagales,Asphodelaceae,Aloe,6,7707728,196,1169,4259209,2770879,Aloe arborescens,2777537,Aloe arborescens
+62,Plantae,Tracheophyta,Magnoliopsida,Brassicales,Caricaceae,Carica,6,7707728,220,7225535,6636,2874482,Carica papaya,2874484,Carica papaya
+63,Plantae,Tracheophyta,Magnoliopsida,Caryophyllales,Cactaceae,Carnegiea,6,7707728,220,422,2519,3084368,Carnegiea gigantea,5384200,Carnegiea gigantea
+64,Plantae,Tracheophyta,Liliopsida,Asparagales,Orchidaceae,Cattleya,6,7707728,196,1169,7689,2800821,NA,NA,Cattleya
+65,Plantae,Tracheophyta,Magnoliopsida,Caryophyllales,Cactaceae,Cephalocereus,6,7707728,220,422,2519,3084413,Cephalocereus senilis,7283905,Cephalocereus senilis
+66,Plantae,Tracheophyta,Magnoliopsida,Fabales,Fabaceae,Ceratonia,6,7707728,220,1370,5386,2962230,Ceratonia siliqua,5356354,Ceratonia siliqua
+67,Plantae,Tracheophyta,Magnoliopsida,Caryophyllales,Cactaceae,Cereus,6,7707728,220,422,2519,3084079,Cereus hildmannianus,5384000,Cereus hildmannianus
+68,Plantae,Tracheophyta,Magnoliopsida,Caryophyllales,Cactaceae,Cereus,6,7707728,220,422,2519,3084079,Cereus jamacaru,7282182,Cereus jamacaru 
+69,Plantae,Tracheophyta,Magnoliopsida,Caryophyllales,Cactaceae,Cereus,6,7707728,220,422,2519,3084079,Cereus repandus,8429062,Cereus peruvianus
+70,Plantae,Tracheophyta,Magnoliopsida,Caryophyllales,Cactaceae,Cereus,6,7707728,220,422,2519,3084079,Cereus fernambucensis,7282711,Cereus tetragonus
+71,Plantae,Tracheophyta,Magnoliopsida,Gentianales,Apocynaceae,Ceropegia,6,7707728,220,412,6701,7150518,Ceropegia collaricorona,3575839,Ceropegia woodii
+72,Plantae,Tracheophyta,Magnoliopsida,Solanales,Solanaceae,Cestrum,6,7707728,220,1176,7717,2928784,Cestrum nocturnum,2928791,Cestrum nocturnum
+73,Plantae,Tracheophyta,Magnoliopsida,Ericales,Ericaceae,Chamaedaphne,6,7707728,220,1353,2505,8388331,Chamaedaphne calyculata,5333436,Chamaedaphne calyculata
+74,Plantae,Tracheophyta,Liliopsida,Arecales,Arecaceae,Chamaedorea,6,7707728,196,552,7681,2734376,Chamaedorea seifrizii,2734708,Chamaedorea seifrizii
+75,Plantae,Tracheophyta,Liliopsida,Asparagales,Asparagaceae,Chlorophytum,6,7707728,196,1169,7683,9388590,Chlorophytum laxum,2774395,Chlorophytum bichetii
+76,Plantae,Tracheophyta,Liliopsida,Asparagales,Asparagaceae,Chlorophytum,6,7707728,196,1169,7683,9388590,Chlorophytum comosum,2774846,Chlorophytum comosum
+77,Plantae,Tracheophyta,Magnoliopsida,Sapindales,Rutaceae,Citrus,6,7707728,220,933,2396,3190155,Citrus microcarpa,3831218,Citrus mitis
+78,Plantae,Tracheophyta,Magnoliopsida,Caryophyllales,Cactaceae,Cleistocactus,6,7707728,220,422,2519,7279702,Cleistocactus smaragdiflorus,7284686,Cleistocactus smaragdiflorus
+79,Plantae,Tracheophyta,Magnoliopsida,Lamiales,Lamiaceae,Clerodendrum,6,7707728,220,408,2497,2925347,Clerodendrum thomsoniae,3889087,Clerodendrum thomsoniae
+80,Plantae,Tracheophyta,Liliopsida,Asparagales,Amaryllidaceae,Clivia,6,7707728,196,1169,7682,2858144,Clivia miniata,9482657,Clivia miniata
+81,Plantae,Tracheophyta,Magnoliopsida,Malpighiales,Euphorbiaceae,Codiaeum,6,7707728,220,1414,4691,3071464,Codiaeum variegatum,3071476,Codiaeum variegatum 
+82,Plantae,Tracheophyta,Liliopsida,Asparagales,Orchidaceae,Coelogyne,6,7707728,196,1169,7689,2811365,NA,NA,Coelogyne
+83,Plantae,Tracheophyta,Liliopsida,Asparagales,Orchidaceae,Coelogyne,6,7707728,196,1169,7689,2811365,Coelogyne flaccida,2811433,Coelogyne flaccida
+84,Plantae,Tracheophyta,Liliopsida,Asparagales,Orchidaceae,Coelogyne,6,7707728,196,1169,7689,2811365,Coelogyne flaccida,2811433,Coelogyne lactea
+85,Plantae,Tracheophyta,Magnoliopsida,Gentianales,Rubiaceae,Coffea,6,7707728,220,412,8798,2895315,Coffea arabica,2895345,Coffea arabica
+86,Plantae,Tracheophyta,Liliopsida,Alismatales,Araceae,Colocasia,6,7707728,196,551,6979,5330758,Colocasia esculenta,5330776,Colocasia esculenta
+87,Plantae,Tracheophyta,Magnoliopsida,Asterales,Asteraceae,NA,6,7707728,220,414,3065,NA,NA,NA,Compositae
+88,Plantae,Tracheophyta,Liliopsida,Asparagales,Asparagaceae,Cordyline,6,7707728,196,1169,7683,9445706,Cordyline fruticosa,2766278,Cordyline terminalis
+89,Plantae,Tracheophyta,Liliopsida,Zingiberales,Costaceae,Costus,6,7707728,196,627,4492,2756771,Costus productus,2756806,Costus productus
+90,Plantae,Tracheophyta,Magnoliopsida,Saxifragales,Crassulaceae,Crassula,6,7707728,220,7219248,2406,2985823,Crassula argentea,8197822,Crassula argentea
+91,Plantae,Tracheophyta,Magnoliopsida,Saxifragales,Crassulaceae,Crassula,6,7707728,220,7219248,2406,2985823,Crassula muscosa,7396425,Crassula lycopodioides
+92,Plantae,Tracheophyta,Liliopsida,Poales,Bromeliaceae,Cryptanthus,6,7707728,196,1369,3740,2694346,NA,NA,Cryptanthus aculis
+93,Plantae,Tracheophyta,Liliopsida,Zingiberales,Marantaceae,Ctenanthe,6,7707728,196,627,8784,2762396,NA,NA,Ctenanthe humilis
+94,Plantae,Tracheophyta,Cycadopsida,Cycadales,Cycadaceae,Cycas,6,7707728,228,834,6168,2683206,Cycas revoluta,2683217,Cycas revoluta
+95,Plantae,Tracheophyta,Liliopsida,Asparagales,Orchidaceae,Cymbidium,1,110,210,9389852,3252478,3252479,NA,NA,Cymbidium
+96,Plantae,Tracheophyta,Liliopsida,Poales,Cyperaceae,Cyperus,6,7707728,196,1369,7708,2713455,Cyperus alternifolius,2714156,Cyperus alternifolius
+97,Plantae,Tracheophyta,Polypodiopsida,Polypodiales,Dryopteridaceae,Cyrtomium,6,7707728,7228684,392,2373,8245169,Cyrtomium falcatum,2650829,Cyrtomium falcatum
+98,Plantae,Tracheophyta,Magnoliopsida,Solanales,Solanaceae,Datura,6,7707728,220,1176,7717,2928734,Datura innoxia,2928755,Datura inoxia
+100,Plantae,Tracheophyta,Liliopsida,Asparagales,Orchidaceae,Dendrobium,6,7707728,196,1169,7689,2821327,NA,NA,Dendrobium
+101,Plantae,Tracheophyta,Liliopsida,Asparagales,Orchidaceae,Dendrobium,6,7707728,196,1169,7689,2821327,Dendrobium fimbriatum,5308651,Dendrobium fimbriatum 
+102,Plantae,Tracheophyta,Liliopsida,Asparagales,Orchidaceae,Dendrobium,6,7707728,196,1169,7689,2821327,Dendrobium nobile,5317489,Dendrobium nobile
+103,Plantae,Tracheophyta,Liliopsida,Commelinales,Commelinaceae,Dichorisandra,6,7707728,196,553,2763195,2763579,Dichorisandra thyrsiflora,2763632,Dichorisandra thyrsiflora
+104,Plantae,Tracheophyta,Liliopsida,Alismatales,Araceae,Dieffenbachia,6,7707728,196,551,6979,2869330,Dieffenbachia seguine,2869345,Dieffenbachia maculata
+105,Plantae,Tracheophyta,Magnoliopsida,Caryophyllales,Droseraceae,Dionaea,6,7707728,220,422,5399,3191248,Dionaea muscipula,5421410,Dionaea muscipula
+106,Plantae,Tracheophyta,Liliopsida,Asparagales,Asparagaceae,Dracaena,6,7707728,196,1169,7683,2752062,Dracaena deremensis,7925681,Dracaena deremensis
+107,Plantae,Tracheophyta,Liliopsida,Asparagales,Asparagaceae,Dracaena,6,7707728,196,1169,7683,2752062,Dracaena surculosa,5304547,Dracaena godseffiana
+108,Plantae,Tracheophyta,Liliopsida,Asparagales,Asphodelaceae,Aloe,6,7707728,196,1169,4259209,2770879,Aloe purpurea,2777917,Dracaena marginata
+109,Plantae,Tracheophyta,Magnoliopsida,Saxifragales,Crassulaceae,Echeveria,6,7707728,220,7219248,2406,5362052,Echeveria pulvinata,8107364,Echeveria pulvinata
+110,Plantae,Tracheophyta,Magnoliopsida,Caryophyllales,Cactaceae,Echinocactus,6,7707728,220,422,2519,3084089,Echinocactus grusonii,7280494,Echinocerus grusonii
+111,Plantae,Tracheophyta,Liliopsida,Commelinales,Pontederiaceae,Eichhornia,6,7707728,196,553,3731,2765939,Eichhornia crassipes,2765940,Eichhornia crassipes
+112,Plantae,Tracheophyta,Cycadopsida,Cycadales,Zamiaceae,Encephalartos,6,7707728,228,834,5375,2683673,Encephalartos altensteinii,2683722,Encephalartos altensteinii
+113,Plantae,Tracheophyta,Liliopsida,Asparagales,Orchidaceae,Epidendrum,6,7707728,196,1169,7689,5297341,Epidendrum magnoliae,5321153,Epidendrum conopseum
+114,Plantae,Tracheophyta,Liliopsida,Asparagales,Orchidaceae,Epidendrum,6,7707728,196,1169,7689,5297341,Epidendrum ibaguense,5320873,Epidendrum ibaguense
+115,Plantae,Tracheophyta,Magnoliopsida,Caryophyllales,Cactaceae,Epiphyllum,6,7707728,220,422,2519,3084180,Epiphyllum oxypetalum,5384031,Epiphyllum oxypetalum
+116,Plantae,Tracheophyta,Magnoliopsida,Lamiales,Gesneriaceae,Alsobia,6,7707728,220,408,6654,6365375,Alsobia dianthiflora,5589998,Episcia dianthiflora
+117,Plantae,Tracheophyta,Magnoliopsida,Rosales,Rosaceae,Eriobotrya,6,7707728,220,691,5015,3024121,Eriobotrya japonica,3024146,Eriobotrya japonica
+118,Plantae,Tracheophyta,Liliopsida,Asparagales,Amaryllidaceae,Eucharis,6,7707728,196,1169,7682,2853159,Eucharis grandiflora,5325597,Eucharis grandiflora
+119,Plantae,Tracheophyta,Magnoliopsida,Myrtales,Myrtaceae,Eugenia,1,54,216,811,6918,1470783,Eugenia uniflora,9567910,Eugenia uniflora
+120,Plantae,Tracheophyta,Magnoliopsida,Malpighiales,Euphorbiaceae,Euphorbia,6,7707728,220,1414,4691,3063749,Euphorbia grandicornis,7858737,Euphorbia grandicornis
+121,Plantae,Tracheophyta,Magnoliopsida,Malpighiales,Euphorbiaceae,Euphorbia,6,7707728,220,1414,4691,3063749,Euphorbia lactea,3069859,Euphorbia lactea
+122,Plantae,Tracheophyta,Magnoliopsida,Malpighiales,Euphorbiaceae,Euphorbia,6,7707728,220,1414,4691,3063749,Euphorbia milii,3067157,Euphorbia milii
+123,Plantae,Tracheophyta,Magnoliopsida,Malpighiales,Euphorbiaceae,Euphorbia,6,7707728,220,1414,4691,3063749,Euphorbia tirucalli,3069353,Euphorbia tirucalli
+124,Plantae,Tracheophyta,Magnoliopsida,Malpighiales,Euphorbiaceae,Euphorbia,6,7707728,220,1414,4691,3063749,Euphorbia trigona,3067098,Euphorbia trigona
+125,Plantae,Tracheophyta,Magnoliopsida,Apiales,Araliaceae,Fatshedera,6,7707728,220,1351,8800,7314459,Fatshedera lizei,3597552,Fatshedera lizei
+126,Plantae,Tracheophyta,Magnoliopsida,Rosales,Moraceae,Ficus,6,7707728,220,691,6640,2984588,Ficus benjamina,5361932,Ficus benjamina
+127,Plantae,Tracheophyta,Magnoliopsida,Rosales,Moraceae,Ficus,6,7707728,220,691,6640,2984588,Ficus elastica,7835333,Ficus elastica
+128,Plantae,Tracheophyta,Magnoliopsida,Rosales,Moraceae,Ficus,6,7707728,220,691,6640,2984588,Ficus pumila,5361930,Ficus pumila
+129,Plantae,Tracheophyta,Magnoliopsida,Lamiales,Acanthaceae,Fittonia,6,7707728,220,408,2393,3233835,Fittonia albivenis,5574508,Fittonia verschaffelti
+130,Plantae,Tracheophyta,Liliopsida,Asparagales,Asphodelaceae,Gasteria,6,7707728,196,1169,4259209,2778529,Gasteria carinata,2778567,Gasteria verrucosa
+131,Plantae,Tracheophyta,Magnoliopsida,Lamiales,Gesneriaceae,Gesneria,6,7707728,220,408,6654,9467815,NA,NA,Gesneria
+132,Plantae,Tracheophyta,Liliopsida,Commelinales,Commelinaceae,Gibasis,6,7707728,196,553,2763195,2764853,Gibasis geniculata,2764872,Gibasis geniculata
+133,Plantae,Tracheophyta,Liliopsida,Poales,Poaceae,NA,6,7707728,196,1369,3073,NA,NA,NA,Gramineae
+134,Plantae,Tracheophyta,Magnoliopsida,Saxifragales,Crassulaceae,Graptopetalum,6,7707728,220,7219248,2406,2985697,Graptopetalum paraguayense,7334731,Graptopetalum paraguayense
+135,Plantae,Tracheophyta,Liliopsida,Asparagales,Asphodelaceae,Haworthiopsis,6,7707728,196,1169,4259209,9233780,Haworthiopsis fasciata,9395407,Haworthia fasciata
+136,Plantae,Tracheophyta,Liliopsida,Asparagales,Asphodelaceae,Tulista,6,7707728,196,1169,4259209,2777074,Tulista pumila,9366225,Haworthia margaritifera
+137,Plantae,Tracheophyta,Liliopsida,Asparagales,Asphodelaceae,Haworthia,6,7707728,196,1169,4259209,2779529,Haworthia herbacea,2779929,Haworthia papillosa
+138,Plantae,Tracheophyta,Liliopsida,Asparagales,Asphodelaceae,Haworthiopsis,6,7707728,196,1169,4259209,9233780,Haworthiopsis fasciata,9395407,Haworthia subfasciata
+139,Plantae,Tracheophyta,Liliopsida,Asparagales,Asphodelaceae,Haworthiopsis,6,7707728,196,1169,4259209,9233780,Haworthiopsis viscosa,9374435,Haworthia viscosa
+140,Plantae,Tracheophyta,Magnoliopsida,Apiales,Araliaceae,Hedera,6,7707728,220,1351,8800,3036021,Hedera helix,8351737,Hedera helix
+141,Plantae,Tracheophyta,Magnoliopsida,Malvales,Malvaceae,Hibiscus,6,7707728,220,941,6685,3152542,Hibiscus rosa-sinensis,3152559,Hibiscus rosa-sinensis
+142,Plantae,Tracheophyta,Magnoliopsida,Gentianales,Apocynaceae,Hoya,6,7707728,220,412,6701,3170437,Hoya carnosa,8658195,Hoya carnosa
+143,Plantae,Tracheophyta,Magnoliopsida,Gentianales,Apocynaceae,Huernia,6,7707728,220,412,6701,7311640,Huernia schneideriana,3570935,Huernia schneideriana
+144,Plantae,Tracheophyta,Magnoliopsida,Gentianales,Rubiaceae,Ixora,6,7707728,220,412,8798,2905224,Ixora chinensis,2905600,Ixora chinensis
+145,Plantae,Tracheophyta,Magnoliopsida,Lamiales,Oleaceae,Jasminum,6,7707728,220,408,6652,3172260,Jasminum simplicifolium,3682067,Jasminum gracile 
+146,Plantae,Tracheophyta,Magnoliopsida,Lamiales,Oleaceae,Jasminum,6,7707728,220,408,6652,3172260,Jasminum polyanthum,3682631,Jasminum polyanthum
+147,Plantae,Tracheophyta,Magnoliopsida,Lamiales,Oleaceae,Jasminum,6,7707728,220,408,6652,3172260,Jasminum simplicifolium,3682067,Jasminum volubile
+148,Plantae,Tracheophyta,Magnoliopsida,Saxifragales,Crassulaceae,Kalanchoe,6,7707728,220,7219248,2406,2985928,Kalanchoe daigremontiana,2985936,Kalanchoe daigremontiana
+149,Plantae,Tracheophyta,Magnoliopsida,Saxifragales,Crassulaceae,Kalanchoe,6,7707728,220,7219248,2406,2985928,Kalanchoe gastonis-bonnieri,2985946,Kalanchoe gastonis-bonnieri
+150,Plantae,Tracheophyta,Magnoliopsida,Saxifragales,Crassulaceae,Kalanchoe,6,7707728,220,7219248,2406,2985928,Kalanchoe tomentosa,4198346,Kalanchoe tomentosa
+151,Plantae,Tracheophyta,Magnoliopsida,Lamiales,Gesneriaceae,Kohleria,6,7707728,220,408,6654,5337639,Kohleria hirsuta,6365157,Kohleria eriantha
+152,Plantae,Tracheophyta,Magnoliopsida,Lamiales,Lamiaceae,NA,6,7707728,220,408,2497,NA,NA,NA,Labiatae
+153,Plantae,Tracheophyta,Liliopsida,Arecales,Arecaceae,Latania,6,7707728,196,552,7681,2739273,Latania lontaroides,2739279,Latania lontaroides
+154,Plantae,Tracheophyta,Liliopsida,Asparagales,Asparagaceae,Ledebouria,6,7707728,196,1169,7683,8293484,Ledebouria socialis,2773791,Ledebouria socialis
+155,Plantae,Tracheophyta,Magnoliopsida,Fabales,Fabaceae,NA,6,7707728,220,1370,5386,NA,NA,NA,Leguminosae
+156,Plantae,Tracheophyta,Liliopsida,Asparagales,Asparagaceae,Liriope,6,7707728,196,1169,7683,9575165,Liriope muscari,5549949,Liriope muscari
+157,Plantae,Tracheophyta,Magnoliopsida,Caryophyllales,Aizoaceae,Lithops,6,7707728,220,422,6752,3231652,NA,NA,Lithops
+158,Plantae,Tracheophyta,Magnoliopsida,Caryophyllales,Cactaceae,Mammillaria,6,7707728,220,422,2519,3084158,Mammillaria elongata,8406968,Mammillaria elongata
+159,Plantae,Tracheophyta,Magnoliopsida,Caryophyllales,Cactaceae,Mammillaria,6,7707728,220,422,2519,3084158,Mammillaria bocasana,7281463,Mammillaria kunzeana
+160,Plantae,Tracheophyta,Magnoliopsida,Caryophyllales,Cactaceae,Mammillaria,6,7707728,220,422,2519,3084158,Neomammillaria seideliana,3956069,Mammillaria seideliana
+161,Plantae,Tracheophyta,Liliopsida,Zingiberales,Marantaceae,Maranta,6,7707728,196,627,8784,2757347,Maranta leuconeura,2761337,Maranta leuconeura
+163,Plantae,Tracheophyta,Polypodiopsida,Salviniales,Marsileaceae,Marsilea,6,7707728,7228684,7229405,2375,2650085,Marsilea quadrifolia,5274875,Marsilea quadrifolia
+164,Plantae,Tracheophyta,Liliopsida,Alismatales,Araceae,Monstera,6,7707728,196,551,6979,2868125,Monstera deliciosa,2868241,Monstera deliciosa
+165,Plantae,Tracheophyta,Liliopsida,Zingiberales,Musaceae,Musa,6,7707728,196,627,4686,2760990,Musa acuminata,2762680,Musa acuminata
+166,Plantae,Tracheophyta,Magnoliopsida,Saxifragales,Haloragaceae,Myriophyllum,6,7707728,220,7219248,6694,2984253,Myriophyllum aquaticum,5361785,Myriophyllum brasiliense
+167,Plantae,Tracheophyta,Magnoliopsida,Lamiales,Gesneriaceae,Nemanthus,1,43,206,705,5138,2257167,NA,NA,Nemanthus
+168,Plantae,Tracheophyta,Magnoliopsida,Lamiales,Gesneriaceae,Nemanthus,1,43,206,705,5138,2257167,NA,NA,Nemanthus wettsteinii
+169,Plantae,Tracheophyta,Liliopsida,Asparagales,Iridaceae,Neomarica,6,7707728,196,1169,7698,2745679,Neomarica gracilis,2745739,Neomarica gracilis
+170,Plantae,Tracheophyta,Liliopsida,Poales,Bromeliaceae,Neoregelia,6,7707728,196,1369,3740,2693967,NA,NA,Neoregelia
+171,Plantae,Tracheophyta,Liliopsida,Poales,Bromeliaceae,Neoregelia,6,7707728,196,1369,3740,2693967,Neoregelia carolinae,2694159,Neoregelia carolinae
+172,Plantae,Tracheophyta,Polypodiopsida,Polypodiales,Lomariopsidaceae,Nephrolepis,6,7707728,7228684,392,3229422,2650926,Nephrolepis exaltata,2650927,Nephrolepis exaltata
+173,Plantae,Tracheophyta,Magnoliopsida,Gentianales,Apocynaceae,Nerium,6,7707728,220,412,6701,3169755,Nerium oleander,3169756,Nerium oleander
+174,Plantae,Tracheophyta,Magnoliopsida,Lamiales,Oleaceae,Olea,6,7707728,220,408,6652,3172244,Olea europaea,5415040,Olea europaea
+175,Plantae,Tracheophyta,Liliopsida,Asparagales,Orchidaceae,Oncidium,6,7707728,196,1169,7689,2834394,NA,NA,Oncidium
+176,Plantae,Tracheophyta,Magnoliopsida,Caryophyllales,Cactaceae,Cylindropuntia,6,7707728,220,422,2519,7628502,Cylindropuntia leptocaulis,7282605,Opuntia leptocaulis tesajo
+177,Plantae,Tracheophyta,Magnoliopsida,Caryophyllales,Cactaceae,Opuntia,6,7707728,220,422,2519,3084187,Opuntia microdasys,7283961,Opuntia microdasys
+178,Plantae,Tracheophyta,Magnoliopsida,Caryophyllales,Cactaceae,Tephrocactus,6,7707728,220,422,2519,7280697,Tephrocactus articulatus,7283993,Opuntia turpinii
+179,Plantae,Tracheophyta,Magnoliopsida,Caryophyllales,Cactaceae,Opuntia,6,7707728,220,422,2519,3084187,Opuntia macrocentra,5384155,Opuntia violacea
+180,Plantae,Tracheophyta,Magnoliopsida,Caryophyllales,Cactaceae,Opuntia,6,7707728,220,422,2519,3084187,Opuntia ficus-indica,5384064,Opuntia vulgaris
+181,Plantae,Tracheophyta,Liliopsida,Asparagales,Asparagaceae,Albuca,6,7707728,196,1169,7683,2772295,Albuca bracteata,3647605,Ornithogalum caudatum
+182,Plantae,Tracheophyta,Magnoliopsida,Sapindales,Anacardiaceae,Pachycormus,6,7707728,220,933,2398,3233133,Pachycormus discolor,7321919,Pachycormus discolor
+183,Plantae,Tracheophyta,Magnoliopsida,Lamiales,Acanthaceae,Pachystachys,6,7707728,220,408,2393,3172976,Pachystachys lutea,3778625,Pachystachys lutea
+184,Plantae,Tracheophyta,Liliopsida,Pandanales,Pandanaceae,Pandanus,6,7707728,196,554,3737,8404076,Pandanus tectorius,8023236,Pandanus veitchii
+185,Plantae,Tracheophyta,Liliopsida,Asparagales,Orchidaceae,Paphiopedilum,6,7707728,196,1169,7689,2825152,Paphiopedilum insigne,2825576,Paphiopedilum insigne
+186,Plantae,Tracheophyta,Magnoliopsida,Malpighiales,Passifloraceae,Passiflora,6,7707728,220,1414,2378,2874172,Passiflora caerulea,2874199,Passiflora caerulea
+187,Plantae,Tracheophyta,Magnoliopsida,Malpighiales,Euphorbiaceae,Euphorbia,6,7707728,220,1414,4691,3063749,Euphorbia tithymaloides,3069168,Pedilanthus tithymaloides
+188,Plantae,Tracheophyta,Polypodiopsida,Polypodiales,Pteridaceae,Pellaea,6,7707728,7228684,392,2367,2651710,Pellaea rotundifolia,5566702,Pellaea rotundifolia
+189,Plantae,Tracheophyta,Polypodiopsida,Polypodiales,Pteridaceae,Cheilanthes,6,7707728,7228684,392,2367,2651736,Cheilanthes viridis,7173446,Pellaea viridis
+190,Plantae,Tracheophyta,Magnoliopsida,Rosales,Urticaceae,Procris,6,7707728,220,691,6639,3234511,Procris repens,7916114,Pellionia daveauana
+191,Plantae,Tracheophyta,Magnoliopsida,Gentianales,Rubiaceae,Pentas,6,7707728,220,412,8798,2908974,Pentas lanceolata,2908986,Pentas lanceolata
+192,Plantae,Tracheophyta,Magnoliopsida,Piperales,Piperaceae,Peperomia,6,7707728,220,404,6678,3086367,Peperomia caperata,4186167,Peperomia caperata
+193,Plantae,Tracheophyta,Magnoliopsida,Piperales,Piperaceae,Peperomia,6,7707728,220,404,6678,3086367,Peperomia cubensis,7305967,Peperomia cubensis
+194,Plantae,Tracheophyta,Magnoliopsida,Piperales,Piperaceae,Peperomia,6,7707728,220,404,6678,3086367,Peperomia obtusifolia,3086423,Peperomia obtusifolia
+195,Plantae,Tracheophyta,Magnoliopsida,Piperales,Piperaceae,Peperomia,6,7707728,220,404,6678,3086367,Peperomia serpens,3086421,Peperomia scandens
+196,Plantae,Tracheophyta,Magnoliopsida,Piperales,Piperaceae,Peperomia,6,7707728,220,404,6678,3086367,NA,NA,Peperomia viridis
+197,Plantae,Tracheophyta,Magnoliopsida,Caryophyllales,Cactaceae,Pereskia,6,7707728,220,422,2519,3084442,Pereskia aculeata,5384215,Pereskia aculeata
+198,Plantae,Tracheophyta,Magnoliopsida,Laurales,Lauraceae,Persea,6,7707728,220,407,6688,3034041,Persea americana,3034046,Persea americana
+199,Plantae,Tracheophyta,Liliopsida,Alismatales,Araceae,Philodendron,6,7707728,196,551,6979,2861312,Philodendron domesticum,3604671,Philodendron domesticum
+200,Plantae,Tracheophyta,Liliopsida,Alismatales,Araceae,Philodendron,6,7707728,196,551,6979,2861312,Philodendron erubescens,2871297,Philodendron erubescens
+201,Plantae,Tracheophyta,Liliopsida,Alismatales,Araceae,Philodendron,6,7707728,196,551,6979,2861312,NA,NA,Philodendron peperomia
+202,Plantae,Tracheophyta,Liliopsida,Asparagales,Orchidaceae,Pholidota,6,7707728,196,1169,7689,2838652,Pholidota imbricata,7871008,Pholidota imbricata
+203,Plantae,Tracheophyta,Magnoliopsida,Rosales,Urticaceae,Pilea,6,7707728,220,691,6639,2984417,Pilea depressa,5361825,Pilea depressa
+204,Plantae,Tracheophyta,Magnoliopsida,Rosales,Urticaceae,Pilea,6,7707728,220,691,6639,2984417,Pilea ovalis,5669908,Pilea involucrata
+205,Plantae,Tracheophyta,Magnoliopsida,Rosales,Urticaceae,Pilea,6,7707728,220,691,6639,2984417,Pilea mollis,5670312,Pilea mollis
+206,Plantae,Tracheophyta,Magnoliopsida,Lamiales,Lentibulariaceae,Pinguicula,6,7707728,220,408,2391,3172450,Pinguicula vulgaris,5415065,Pinguicula vulgaris
+207,Plantae,Tracheophyta,Polypodiopsida,Polypodiales,Polypodiaceae,Platycerium,6,7707728,7228684,392,2368,7126742,Platycerium bifurcatum,7126767,Platycerium willinckii
+208,Plantae,Tracheophyta,Magnoliopsida,Lamiales,Lamiaceae,Plectranthus,6,7707728,220,408,2497,2926635,Plectranthus glabratus,3904562,Plectranthus coleoides
+209,Plantae,Tracheophyta,Magnoliopsida,Lamiales,Lamiaceae,Plectranthus,6,7707728,220,408,2497,2926635,Plectranthus verticillatus,2926638,Plectranthus nummularius
+210,Plantae,Tracheophyta,Magnoliopsida,Lamiales,Lamiaceae,Plectranthus,6,7707728,220,408,2497,2926635,Plectranthus spicatus,3901451,Plectranthus spicatus
+211,Plantae,Tracheophyta,Magnoliopsida,Caryophyllales,Plumbaginaceae,Plumbago,6,7707728,220,422,2419,3082281,Plumbago auriculata,3082283,Plumbago auriculata
+212,Plantae,Tracheophyta,Magnoliopsida,Gentianales,Apocynaceae,Plumeria,6,7707728,220,412,6701,3169672,Plumeria rubra,3169674,Plumeria rubra acutifolia
+213,Plantae,Tracheophyta,Pinopsida,Pinales,Podocarpaceae,Podocarpus,6,7707728,194,640,8830,5284386,Podocarpus macrophyllus,5285930,Podocarpus macrophyllus
+214,Plantae,Tracheophyta,Polypodiopsida,Polypodiales,Polypodiaceae,Polypodium,6,7707728,7228684,392,2368,2650111,NA,NA,Polypodium
+215,Plantae,Tracheophyta,Polypodiopsida,Polypodiales,Polypodiaceae,Polypodiodes,6,7707728,7228684,392,2368,8278120,Polypodiodes amoena,7127004,Polypodium aureum
+216,Plantae,Tracheophyta,Magnoliopsida,Caryophyllales,Didiereaceae,Portulacaria,6,7707728,220,422,3231952,3084776,Portulacaria afra,3084777,Portulacaria afra
+217,Plantae,Tracheophyta,Magnoliopsida,Myrtales,Myrtaceae,Psidium,6,7707728,220,690,5014,3187232,Psidium cattleianum,5420641,Psidium littorale
+218,Plantae,Tracheophyta,Psilotopsida,Psilotales,Psilotaceae,Psilotum,6,7707728,7219203,931,6630,2688173,NA,NA,Psilotum
+219,Plantae,Tracheophyta,Magnoliopsida,Myrtales,Lythraceae,Punica,6,7707728,220,690,6684,3188663,Punica granatum,5420901,Punica granatum nana
+220,Plantae,Tracheophyta,Magnoliopsida,Caryophyllales,Cactaceae,Rhipsalis,6,7707728,220,422,2519,3084035,Rhipsalis cereuscula,7659514,Rhipsalis cereuscula
+221,Plantae,Tracheophyta,Magnoliopsida,Caryophyllales,Cactaceae,Hatiora,6,7707728,220,422,2519,7959973,Hatiora gaertneri,7280947,Rhipsalis gaertneri
+222,Plantae,Tracheophyta,Magnoliopsida,Caryophyllales,Cactaceae,Rhipsalis,6,7707728,220,422,2519,3084035,Rhipsalis mesembryanthemoides,7484915,Rhipsalis mesembryanthoides
+223,Plantae,Tracheophyta,Magnoliopsida,Malpighiales,Rhizophoraceae,Rhizophora,6,7707728,220,1414,6671,3086525,NA,NA,Rhizophora
+224,Plantae,Tracheophyta,Liliopsida,Commelinales,Commelinaceae,Tradescantia,6,7707728,196,553,2763195,2765096,Tradescantia spathacea,2765230,Rhoeo spathacea 
+225,Plantae,Tracheophyta,Magnoliopsida,Caryophyllales,Phytolaccaceae,Rivina,6,7707728,220,422,2516,3084026,Rivina humilis,3084027,Rivina humilus
+226,Plantae,Tracheophyta,Magnoliopsida,Lamiales,Acanthaceae,Ruellia,6,7707728,220,408,2393,3171840,Ruellia makoyana,8029019,Ruellia makoyana
+227,Plantae,Tracheophyta,Polypodiopsida,Polypodiales,Dryopteridaceae,Rumohra,6,7707728,7228684,392,2373,2650943,Rumohra adiantiformis,2650944,Rumohra adiantiformis
+228,Plantae,Tracheophyta,Liliopsida,Asparagales,Asparagaceae,Ruscus,6,7707728,196,1169,7683,2769754,Ruscus hypoglossum,2769775,Ruscus hypoglossum
+229,Plantae,Tracheophyta,Liliopsida,Commelinales,Haemodoraceae,Sanseviera,6,7707728,196,553,7691,3715419,NA,NA,Sanseviera splendens
+230,Plantae,Tracheophyta,Liliopsida,Asparagales,Asparagaceae,Sansevieria,6,7707728,196,1169,7683,2770498,Sansevieria trifasciata,2770610,Sanseviera trifasciata
+231,Plantae,Tracheophyta,Magnoliopsida,Ericales,Sarraceniaceae,Sarracenia,6,7707728,220,1353,2426,3190681,Sarracenia leucophylla,5421380,Sarracenia leucophylla
+232,Plantae,Tracheophyta,Magnoliopsida,Ericales,Sarraceniaceae,Sarracenia,6,7707728,220,1353,2426,3190681,Sarracenia purpurea,5421389,Sarracenia purpurea
+233,Plantae,NA,NA,NA,NA,Sasanqua,6,NA,NA,NA,NA,8210140,NA,NA,Sasanqua
+234,Plantae,Tracheophyta,Magnoliopsida,Saxifragales,Saxifragaceae,Saxifraga,6,7707728,220,7219248,2402,2987833,Saxifraga stolonifera,3032762,Saxifraga stolonifera
+235,Plantae,Tracheophyta,Magnoliopsida,Apiales,Araliaceae,Schefflera,6,7707728,220,1351,8800,3037700,Schefflera venulosa,3038372,Schefflera venulosa
+236,Plantae,Tracheophyta,Magnoliopsida,Caryophyllales,Cactaceae,Hatiora,6,7707728,220,422,2519,7959973,Hatiora gaertneri,7280947,Schlumbergera gaertneri
+237,Plantae,Tracheophyta,Magnoliopsida,Caryophyllales,Cactaceae,Schlumbergera,6,7707728,220,422,2519,3084040,Schlumbergera truncata,5383983,Schlumbergera truncata
+238,Plantae,Tracheophyta,Liliopsida,Alismatales,Araceae,Scindapsus,6,7707728,196,551,6979,2873692,NA,NA,Scindapsus
+239,Plantae,Tracheophyta,Magnoliopsida,Saxifragales,Crassulaceae,Sedum,6,7707728,220,7219248,2406,5361975,Sedum nussbaumerianum,5690070,Sedum adolphii
+240,Plantae,Tracheophyta,Magnoliopsida,Saxifragales,Crassulaceae,Sedum,6,7707728,220,7219248,2406,5361975,Sedum morganianum,5690408,Sedum morganianum
+241,Plantae,Tracheophyta,Magnoliopsida,Saxifragales,Crassulaceae,Sedum,6,7707728,220,7219248,2406,5361975,Sedum pachyphyllum,5689712,Sedum pachyphyllum
+242,Plantae,Tracheophyta,Magnoliopsida,Caryophyllales,Cactaceae,Selenicereus,6,7707728,220,422,2519,3084461,Selenicereus grandiflorus,3084466,Selenicereus grandiflorus
+243,Plantae,Tracheophyta,Magnoliopsida,Caryophyllales,Cactaceae,Selenicereus,6,7707728,220,422,2519,3084461,Selenicereus pteranthus,3084462,Selenicereus pteranthus
+244,Plantae,Tracheophyta,Magnoliopsida,Saxifragales,Crassulaceae,Sempervivum,6,7707728,220,7219248,2406,2985948,Sempervivum arachnoideum,4201709,Sempervivum arachnoideum
+245,Plantae,Tracheophyta,Magnoliopsida,Asterales,Asteraceae,Senecio,6,7707728,220,414,3065,3106738,NA,NA,Senecio fulgens
+246,Plantae,Tracheophyta,Magnoliopsida,Asterales,Asteraceae,Kleinia,6,7707728,220,414,3065,8048745,Kleinia rowleyana,5405682,Senecio rowleyanus
+247,Plantae,Tracheophyta,Magnoliopsida,Asterales,Asteraceae,Kleinia,6,7707728,220,414,3065,8048745,Kleinia repens,5392388,Senecio serpens
+248,Plantae,Tracheophyta,Liliopsida,Commelinales,Commelinaceae,Siderasis,6,7707728,196,553,2763195,2764919,Siderasis fuscata,2764920,Siderasis fuscata
+249,Plantae,Tracheophyta,Magnoliopsida,Solanales,Solanaceae,Solanum,6,7707728,220,1176,7717,2928997,Solanum seaforthianum,2932040,Solanum seaforthianum
+250,Plantae,Tracheophyta,Liliopsida,Alismatales,Araceae,Spathiphyllum,6,7707728,196,551,6979,2869649,Spathiphyllum blandum,2869755,Spathiphyllum blandum
+251,Plantae,Bryophyta,Sphagnopsida,Sphagnales,Sphagnaceae,Sphagnum,6,35,190,623,4673,2668958,NA,NA,Sphagnum
+252,Plantae,Tracheophyta,Liliopsida,Asparagales,Orchidaceae,Spiranthes,6,7707728,196,1169,7689,2805315,Spiranthes odorata,2805363,Spiranthes cernua odorata
+253,Plantae,Tracheophyta,Magnoliopsida,Gentianales,Apocynaceae,Ceropegia,6,7707728,220,412,6701,7150518,Ceropegia gigantea,9317408,Stapelia gigantea
+254,Plantae,Tracheophyta,Liliopsida,Zingiberales,Strelitziaceae,Strelitzia,6,7707728,196,627,8799,2763100,Strelitzia reginae,2763116,Strelitzia reginae
+255,Plantae,Tracheophyta,Magnoliopsida,Sapindales,Meliaceae,Swietenia,6,7707728,220,933,2397,3190483,NA,NA,Swietenia
+256,Plantae,Tracheophyta,Magnoliopsida,Malpighiales,Euphorbiaceae,Euphorbia,6,7707728,220,1414,4691,3063749,Euphorbia umbellata,3070438,Synadenium grantii
+257,Plantae,Tracheophyta,Liliopsida,Alismatales,Araceae,Syngonium,6,7707728,196,551,6979,2867833,Syngonium podophyllum,2867866,Syngonium podophyllum
+258,Plantae,Tracheophyta,Magnoliopsida,Malvales,Malvaceae,Theobroma,6,7707728,220,941,6685,2984934,Theobroma cacao,3152205,Theobroma cacao
+259,Plantae,Tracheophyta,Liliopsida,Poales,Bromeliaceae,Tillandsia,6,7707728,196,1369,3740,8279994,NA,NA,Tillandsia lindenii
+260,Plantae,Tracheophyta,Liliopsida,Poales,Bromeliaceae,Tillandsia,6,7707728,196,1369,3740,8279994,Tillandsia punctulata,2695302,Tillandsia punctulata
+261,Plantae,Tracheophyta,Liliopsida,Poales,Bromeliaceae,Tillandsia,6,7707728,196,1369,3740,8279994,Tillandsia usneoides,2695149,Tillandsia usneoides
+262,Plantae,Tracheophyta,Magnoliopsida,Saxifragales,Saxifragaceae,Tolmiea,6,7707728,220,7219248,2402,3032560,Tolmiea menziesii,5371605,Tolmiea menziesii
+263,Plantae,Tracheophyta,Liliopsida,Arecales,Arecaceae,Trachycarpus,6,7707728,196,552,7681,2739070,Trachycarpus fortunei,2739071,Trachycarpus fortunei
+264,Plantae,Tracheophyta,Liliopsida,Commelinales,Commelinaceae,Tradescantia,6,7707728,196,553,2763195,2765096,NA,NA,Tradescantia
+265,Plantae,Tracheophyta,Liliopsida,Commelinales,Commelinaceae,Tradescantia,6,7707728,196,553,2763195,2765096,Tradescantia sillamontana,2765120,Tradescantia sillamontana
+266,Plantae,Tracheophyta,Magnoliopsida,Lamiales,Lentibulariaceae,Utricularia,6,7707728,220,408,2391,3172398,Utricularia sandersonii,4088290,Utricularia sandersonii
+267,Plantae,Tracheophyta,Liliopsida,Asparagales,Orchidaceae,Vanilla,6,7707728,196,1169,7689,2743233,Vanilla planifolia,2803398,Vanilla planifolia
+268,Plantae,Tracheophyta,Liliopsida,Asparagales,Asparagaceae,Veltheimia,6,7707728,196,1169,7683,2767959,Veltheimia capensis,8179261,Veltheimia viridifolia
+269,Plantae,Tracheophyta,Liliopsida,Poales,Bromeliaceae,Vriesea,6,7707728,196,1369,3740,2699764,Vriesea carinata,5289330,Vriesia carinata
+270,Plantae,Tracheophyta,Liliopsida,Poales,Bromeliaceae,Lutheria,6,7707728,196,1369,3740,9404181,Lutheria splendens,9523461,Vriesia splendens
+271,Plantae,Tracheophyta,Liliopsida,Asparagales,Asparagaceae,Yucca,6,7707728,196,1169,7683,2775496,Yucca aloifolia,2775744,Yucca aloifolia
+272,Plantae,Tracheophyta,Liliopsida,Asparagales,Asparagaceae,Yucca,6,7707728,196,1169,7683,2775496,Yucca filamentosa,2775561,Yucca filamentosa
+273,Plantae,Tracheophyta,Cycadopsida,Cycadales,Zamiaceae,Zamia,6,7707728,228,834,5375,2683306,Zamia integrifolia,5284049,Zamia floridana
+274,Plantae,Tracheophyta,Liliopsida,Commelinales,Commelinaceae,Tradescantia,6,7707728,196,553,2763195,2765096,Tradescantia zebrina,2765359,Zebrina pendula
+275,Plantae,Tracheophyta,Magnoliopsida,Caryophyllales,Cactaceae,Schlumbergera,6,7707728,220,422,2519,3084040,Schlumbergera truncata,5383983,Zygocactus truncatus
