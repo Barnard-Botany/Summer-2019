@@ -1,0 +1,909 @@
+---
+title: "TAXIZE Tools Notebook"
+output: html_notebook
+---
+
+
+
+```{r}
+library(taxize)
+```
+
+
+
+The main objective here is to prepare for and use the function "classification" to expand from a list of species (or other taxa) to a list where you have categorization into higher taxonomic ranks such as families or orders. Another issue is that we want to be able to use any database, not just something like NCBI but also things like GBIF or the Catalogue of Life (COL).
+
+The function classification requires as input the name of a taxon (string variable), and you can add arguments that specify which database to use. You can use many, and even use more than one). In the example below, the "row=1" argument is added to take the first entry returned from the database. If this is omitted, then the function will become interactive and before returning data the user will have a chance to "go interactive" -- enter the console below and choose which row to use. (Typically you'll want the first row, which is why the argument to get only the first row is so useful.)
+
+
+
+This could be done:
+
+one at a time (one string variable)
+
+#Instructional example 
+
+```{r}
+single<-classification(c("Magnolia soulangeana"), db = c('col'), row = 1, verbose=FALSE)
+single
+```
+
+The input does not need to be a species binomial. Other ranks can be used. For example, if you add a series of family names you can get their classification into orders, classes, phyla and kingdom:
+
+
+```{r}
+families<-classification(c("Magnoliaceae", "Pinaceae","Brassicaceae", "Oleaceae"), db = 'col', row=1,  verbose=FALSE)
+families
+```
+
+You'll notice that the output includes classification IDs for each taxonomic level. In some circumstances you might want these unique identifierse, but often you won't. If you don't want them, you can turn them off:  
+
+```{r}
+single0<-classification(c("Magnolia soulangeana"), db = c('col'), row = 1, verbose=FALSE, return_id = FALSE)
+single0
+```
+
+
+
+If you want to get information for a few taxa at a time, that can be done by typing or by copy-and-paste from the clipboard. You need the "C()" format. The function needs to know that you're passing it multiple string variables, i.e., a vector of variables).
+
+
+```{r}
+multiple<-classification(c("Magnolia soulangeana", "Pinus contorta","Arabidopsis thaliana", "Fraxinus americana"), db = 'gbif', verbose=FALSE, row=1)
+multiple
+```
+
+
+```{r}
+filelist<-read.csv("small.csv")
+filelist
+#Have to name header of file "Taxon", not "Genus species"
+```
+
+Notice that you need to read in not just the imported file, but the specific column (or vector), which in this file has the variable name "Taxon" -- that may vary. 
+
+```{r}
+biglist<-classification(filelist$Taxon, db = 'gbif', verbose=FALSE, row=1, return_id = FALSE)
+biglist
+```
+
+
+
+Lastly, this output is in an annoying format, but you can bind together all the output into a dataframe. below, the dataframe is returned, as is information to check to make sure that it has the right dimensions and that it is, indeed, a dataframe. 
+
+```{r}
+useful<-cbind(biglist)
+useful
+dim(useful)
+class(useful)
+```
+
+Save the file 
+
+```{r}
+write.csv(useful, file="TestUseful.csv")
+```
+
+
+#BigList attempt --- unsuccessful 
+```{r}
+largelist<-read.csv("BigList.csv")
+largelist
+#Have to name header of file "Taxon", not "Genus species"
+```
+
+
+
+
+
+
+
+```{r}
+completelist<-classification(largelist$Taxon, db = 'gbif', verbose=FALSE, row=1, return_id = FALSE)
+completelist
+```
+
+
+
+#Test with medium list --- successful 
+```{r}
+mediumlist<-read.csv("medium.csv")
+mediumlist
+#Have to name header of file "Taxon", not "Genus species"
+```
+
+
+```{r}
+medium2<-classification(mediumlist$Taxon, db = 'gbif', verbose=FALSE, row=1, return_id = FALSE)
+medium2
+```
+
+
+
+#University of Minnesota Duluth 
+```{r}
+umnlist<-read.csv("UMN_List.csv")
+umnlist
+#Have to name header of file "Taxon", not "Genus species"
+```
+
+
+
+```{r}
+umn2<-classification(umnlist$Taxon, db = 'gbif', verbose=FALSE, row=1, return_id = FALSE)
+umn2
+```
+
+
+
+```{r}
+UMN<-cbind(umn2)
+UMN
+dim(UMN)
+class(UMN)
+```
+
+
+
+```{r}
+write.csv(UMN, file="UMNFullProfile.csv")
+```
+
+
+
+#Michigan State 
+```{r}
+michlist<-read.csv("MichState_Binomials.csv")
+michlist
+#Have to name header of file "Taxon", not "Genus species"
+```
+
+```{r}
+mich2<-classification(michlist$Taxon, db = 'gbif', verbose=FALSE, row=1, return_id = FALSE)
+mich2
+```
+
+```{r}
+Michigan<-cbind(mich2)
+Michigan
+dim(Michigan)
+class(Michigan)
+```
+
+
+```{r}
+write.csv(Michigan, file="MichiganFullProfile.csv")
+```
+
+
+
+#Northern Kentucky University 
+```{r}
+nkulist<-read.csv("NKU_Binomials.csv")
+nkulist
+```
+
+
+```{r}
+nku2<-classification(nkulist$Taxon, db = 'gbif', verbose=FALSE, row=1, return_id = FALSE)
+nku2
+```
+
+
+
+```{r}
+NKU<-cbind(nku2)
+NKU
+dim(NKU)
+class(NKU)
+```
+
+```{r}
+write.csv(NKU, file="NKUFullProfile.csv")
+```
+
+
+
+#Appalachian State University 
+```{r}
+applist<-read.csv("AppState_Binomials.csv")
+applist
+```
+
+```{r}
+applist <- na.omit(applist)
+app2<-classification(applist$Taxon, db = 'gbif', verbose=FALSE, row=1, return_id = FALSE)
+app2
+
+#out <- get_ids(names= applist$Taxon, db=c('gbif'), row=1)
+#cl <- classification(out, start=10)
+```
+
+```{r}
+Appalachia<-cbind(app2)
+Appalachia
+dim(Appalachia)
+class(Appalachia)
+
+```
+
+
+
+```{r}
+write.csv(Appalachia, file="AppStateFullProfile.csv")
+```
+
+
+
+#WASHINGTON STATE PROBLEM CHILD 
+```{r}
+wsulist<-read.csv("WSU_Binomials.csv")
+wsulist
+```
+
+```{r}
+wash2<-classification(wsulist$Taxon, db = 'gbif', verbose=FALSE, row=1, return_id = FALSE) 
+wash2
+```
+
+```{r}
+washu<-cbind(wash2)
+washu
+dim(washu)
+class(washu)
+```
+
+
+
+
+
+#Southern Illinois University 
+```{r}
+siulist<-read.csv("SIU_List.csv")
+siulist
+```
+
+```{r}
+siu2<-classification(siulist$Genus.species, db = 'gbif', verbose=FALSE, row=1, return_id = FALSE) 
+siu2
+```
+
+
+```{r}
+southillinois<-cbind(siu2)
+southillinois
+dim(southillinois)
+class(southillinois)
+```
+
+
+
+```{r}
+write.csv(southillinois, file="SIUFullProfile.csv")
+```
+
+
+
+#Colgate 
+```{r}
+colgatelist<-read.csv("Colgate_Binomials.csv")
+siulist
+```
+
+```{r}
+colg2<-classification(colgatelist$Taxon, db = 'gbif', verbose=FALSE, row=1, return_id = FALSE) 
+colg2
+```
+
+
+```{r}
+Colgate<-cbind(colg2)
+Colgate
+dim(Colgate)
+class(Colgate)
+```
+
+
+
+```{r}
+write.csv(Colgate, file="ColgateFullProfile.csv")
+```
+
+
+#Cornell University 
+```{r}
+cornelllist<-read.csv("Cornell_Binomials.csv")
+cornelllist
+```
+
+```{r}
+cornell2<-classification(cornelllist$Taxon, db = 'gbif', verbose=FALSE, row=1, return_id = FALSE) 
+cornell2
+```
+
+
+```{r}
+cornell<-cbind(cornell2)
+cornell
+dim(cornell)
+class(cornell)
+```
+
+
+
+```{r}
+write.csv(cornell, file="CornellFullProfile.csv")
+```
+
+
+
+#Centre College 
+```{r}
+centrelist<-read.csv("Centre_Binomials.csv")
+centrelist
+```
+
+```{r}
+centre2<-classification(centrelist$Taxon, db = 'gbif', verbose=FALSE, row=1, return_id = FALSE) 
+centre2
+```
+
+
+```{r}
+centrecollege<-cbind(centre2)
+centrecollege
+dim(centrecollege)
+class(centrecollege)
+```
+
+
+
+```{r}
+write.csv(centrecollege, file="CentreFullProfile.csv")
+```
+
+
+#Smith's Lyman Conservatory 
+```{r}
+smithlist<-read.csv("Smith_Binomials.csv")
+smithlist
+```
+
+```{r}
+smith2<-classification(smithlist$Taxon, db = 'gbif', verbose=FALSE, row=1, return_id = FALSE) 
+smith2
+```
+
+
+```{r}
+lyman<-cbind(smith2)
+lyman
+dim(lyman)
+class(lyman)
+```
+
+
+
+```{r}
+write.csv(lyman, file="SmithFullProfile.csv")
+```
+
+
+#Penn State 
+```{r}
+pennstatelist <-read.csv("PennState_Binomials.csv")
+pennstatelist
+```
+
+```{r}
+pennstate2<-classification(pennstatelist$Taxon, db= 'gbif', verbose= FALSE, row= 1, return_id= FALSE)
+pennstate2
+```
+
+
+```{r}
+pennstate<-cbind(pennstate2)
+pennstate
+dim(pennstate)
+class(pennstate)
+```
+
+
+
+```{r}
+write.csv(pennstate, file="PennStateFullProfile.csv")
+```
+
+
+#Dartmouth 
+```{r}
+dartmouthlist<-read.csv("Dartmouth_Binomials.csv")
+dartmouthlist
+```
+
+
+```{r}
+dart2<-classification(dartmouthlist$Taxon, db= 'gbif', verbose= FALSE, row= 1, result_id= FALSE)
+dart2
+```
+
+
+
+```{r}
+dartmouth<-cbind(dart2)
+dartmouth
+dim(dartmouth)
+class(dartmouth)
+```
+
+```{r}
+write.csv(dartmouth, file="DartmouthFullProfile.csv")
+```
+
+
+#University of Alaska-Fairbanks
+```{r}
+alaskalist<- read.csv("UAF_Binomials.csv")
+alaskalist
+```
+
+
+```{r}
+alaska2<- classification(alaskalist$Taxon, db= 'gbif', verbose= FALSE, row=1, return_id= FALSE)
+alaska2
+```
+
+
+```{r}
+alaska<-cbind(alaska2)
+alaska
+dim(alaska)
+class(alaska)
+```
+
+
+```{r}
+write.csv(alaska, file= "AlaskaFullProfile.csv")
+```
+
+
+#University of Richmond 
+```{r}
+richmondlist<- read.csv("URichmond_Binomials.csv")
+richmondlist
+```
+
+
+```{r}
+richmond2<- classification(richmondlist$Taxon, db= 'gbif', verbose= FALSE, row= 1, result_id= FALSE)
+richmond2
+```
+
+
+
+
+```{r}
+richmond<- cbind(richmond2)
+richmond
+dim(richmond)
+class(richmond)
+```
+
+
+
+
+```{r}
+write.csv(richmond, file="RichmondFullProfile.csv")
+```
+
+
+
+#University of Pennsylvania 
+```{r}
+upennlist<- read.csv("UPenn_Binomials.csv")
+upennlist
+```
+
+
+```{r}
+upenn2<- classification(upennlist$Taxon, db= 'gbif', verbose= FALSE, row= 1, result_id= FALSE)
+upenn2
+```
+
+
+```{r}
+upenn<- cbind(upenn2)
+upenn
+dim(upenn)
+class(upenn)
+```
+
+
+```{r}
+write.csv(upenn, file="UPennFullProfile.csv")
+```
+
+
+
+
+#Western Virginia University 
+```{r}
+wvulist<- read.csv("WVU_Binomials.csv")
+wvulist
+```
+
+```{r}
+wvu2<- classification(wvulist$Taxon, db= 'gbif', verbose= FALSE, row= 1, result_id=FALSE)
+wvu2
+```
+
+
+```{r}
+wvu<- cbind(wvu2)
+wvu
+dim(wvu)
+class(wvu)
+```
+
+
+```{r}
+write.csv(wvu, file="WVUFullProfile.csv")
+```
+
+
+
+
+#Bucknell 
+```{r}
+bucknelllist<- read.csv("Bucknell_Binomials.csv")
+bucknelllist
+```
+
+```{r}
+bucknell2<- classification(bucknelllist$Taxon, db= 'gbif', verbose= FALSE, row=1, result_id= FALSE)
+bucknell2
+```
+
+
+
+
+```{r}
+bucknell<- cbind(bucknell2)
+bucknell
+dim(bucknell)
+class(bucknell)
+```
+
+
+
+```{r}
+write.csv(bucknell, file="BucknellFullProfile.csv")
+```
+
+
+
+#Eastern Carolina University 
+```{r}
+eculist<- read.csv("ECU_Binomials.csv")
+eculist
+```
+
+
+```{r}
+ecu2<- classification(eculist$Taxon, db= 'gbif', verbose= FALSE, row= 1, result_id= FALSE)
+ecu2
+```
+
+
+
+```{r}
+ecu<- cbind(ecu2)
+ecu
+dim(ecu)
+class(ecu)
+```
+
+
+```{r}
+write.csv(ecu, file="ECUFullProfile.csv")
+```
+
+
+#University of Illinois 
+
+```{r}
+uilllist<-read.csv("UIllinois_Binomials.csv")
+uilllist
+```
+
+```{r}
+uill2<-classification(uilllist$Taxon, db = 'gbif', verbose=FALSE, row=1, return_id = FALSE) 
+uill2
+```
+
+
+```{r}
+uill3<-cbind(uill2)
+uill3
+dim(uill3)
+class(uill3)
+```
+
+
+
+```{r}
+write.csv(uill3, file="UIllinoisFullProfile.csv")
+```
+
+
+
+#University of Wisconsin - Madison 
+
+```{r}
+madisonlist<-read.csv("Madison_Binomials.csv")
+madisonlist
+```
+
+```{r}
+madison2<-classification(madisonlist$Taxon, db = 'gbif', verbose=FALSE, row=1, return_id = FALSE) 
+madison2
+```
+
+
+```{r}
+madison<-cbind(madison2)
+madison
+dim(madison)
+class(madison)
+```
+
+
+
+```{r}
+write.csv(madison, file="MadisonFullProfile.csv")
+```
+
+#Rollins College 
+
+```{r}
+rollinslist<-read.csv("Rollins_Binomials.csv")
+rollinslist
+```
+
+```{r}
+rollins2<-classification(rollinslist$Taxon, db = 'gbif', verbose=FALSE, row=1, return_id = FALSE) 
+rollins2
+```
+
+
+```{r}
+rollins<-cbind(rollins2)
+rollins
+dim(rollins)
+class(rollins)
+```
+
+
+
+```{r}
+write.csv(rollins, file="RollinsFullProfile.csv")
+```
+
+#Wheaton College 
+
+```{r}
+wheatonlist<-read.csv("Wheaton_Binomials.csv")
+wheatonlist
+```
+
+```{r}
+wheaton2<-classification(wheatonlist$Taxon, db = 'gbif', verbose=FALSE, row=1, return_id = FALSE) 
+wheaton2
+```
+
+
+```{r}
+wheaton<-cbind(wheaton2)
+wheaton
+dim(wheaton)
+class(wheaton)
+```
+
+
+
+```{r}
+write.csv(wheaton, file="WheatonFullProfile.csv")
+```
+
+#University of Washington - Seattle 
+
+```{r}
+seattlelist<-read.csv("UWSeattle_Binomials.csv")
+seattlelist
+```
+
+```{r}
+seattle2<-classification(seattlelist$Taxon, db = 'gbif', verbose=FALSE, row=1, return_id = FALSE) 
+seattle2
+```
+
+
+```{r}
+seattle<-cbind(seattle2)
+seattle
+dim(seattle)
+class(seattle)
+```
+
+
+
+```{r}
+write.csv(seattle, file="SeattleFullProfile.csv")
+```
+
+#University of Tennessee - Knoxville 
+
+```{r}
+utklist<-read.csv("UTK_Binomials.csv")
+utklist
+```
+
+```{r}
+utk2<-classification(utklist$Taxon, db = 'gbif', verbose=FALSE, row=1, return_id = FALSE) 
+utk2
+```
+
+
+```{r}
+knox<-cbind(utk2)
+knox
+dim(knox)
+class(knox)
+```
+
+
+
+```{r}
+write.csv(knox, file="UTKnoxFullProfile.csv")
+```
+
+
+#Williams College 
+
+```{r}
+williamslist<-read.csv("Williams_Binomials.csv")
+williamslist
+```
+
+```{r}
+williams2<-classification(williamslist$Taxon, db = 'gbif', verbose=FALSE, row=1, return_id = FALSE) 
+williams2
+```
+
+```{r}
+williams<-cbind(williams2)
+williams
+dim(williams)
+class(williams)
+```
+
+
+```{r}
+write.csv(williams, file="WilliamsFullProfile.csv")
+```
+
+#Mount Holyoke 
+
+```{r}
+holyokelist<- read.csv("Holyoke_Binomials.csv")
+holyokelist
+```
+
+
+```{r}
+holyoke2<-classification(holyokelist$Taxon, db = 'gbif', verbose=FALSE, row=1, return_id = FALSE) 
+holyoke2
+```
+
+```{r}
+mtholyoke<-cbind(holyoke2)
+mtholyoke
+dim(mtholyoke)
+class(mtholyoke)
+```
+
+```{r}
+write.csv(mtholyoke, file="MountHolyokeFullProfile.csv")
+```
+
+
+
+
+
+
+
+
+#The Problem Children: UConn, Smith, and Washington State University 
+
+#WASHINGTON STATE PROBLEM CHILD -- FIXED 
+#choke was caused by a species misspelling 
+```{r}
+wsulist<-read.csv("WSU_Binomials.csv")
+wsulist
+```
+
+```{r}
+wash2<-classification(wsulist$Taxon, db = 'gbif', verbose=FALSE, row=1, return_id = FALSE) 
+wash2
+```
+
+```{r}
+washu<-cbind(wash2)
+washu
+dim(washu)
+class(washu)
+```
+
+
+```{r}
+write.csv(washu, file="WashingtonCompleteProfile.csv")
+```
+
+
+#SMITH 
+
+```{r}
+smithlist<-read.csv("Smith_Binomials.csv")
+smithlist
+```
+
+```{r}
+smith2<-classification(smithlist$Taxon, db = 'gbif', verbose=FALSE, row=1, return_id = FALSE) 
+smith2
+```
+
+
+```{r}
+lyman<-cbind(smith2)
+lyman
+dim(lyman)
+class(lyman)
+```
+
+
+
+```{r}
+write.csv(lyman, file="SmithFullProfile.csv")
+```
+
+
+#UCONN
+
+```{r}
+uconnlist<-read.csv("UConn_Binomials.csv")
+uconnlist
+```
+
+```{r}
+uconn2<-classification(uconnlist$Taxon, db = 'gbif', verbose=FALSE, row=1, return_id = FALSE) 
+uconn2
+```
+
+
+```{r}
+uconn3<-cbind(uconn22)
+uconn3
+dim(uconn3)
+class(uconn3)
+```
+
+
+
+```{r}
+write.csv(uconn3, file="UConnFullProfile.csv")
+```
+
+
+
+
+

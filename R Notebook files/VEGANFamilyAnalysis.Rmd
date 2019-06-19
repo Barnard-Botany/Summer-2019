@@ -1,0 +1,467 @@
+---
+title: "VEGAN Analysis of Families in Lists"
+output: html_notebook
+---
+
+
+
+
+```{r}
+library("plyr")
+#do not install package "dplyr" - it will cause conflict and code won't run properly!
+library("vegan")
+library("labdsv")
+```
+
+
+
+
+
+
+```{r}
+alaskaf<-read.csv("AlaskaFamilies.csv")
+Alaska20=count(alaskaf)
+Alaska20
+Alaska20<-data.frame("Alaska (F)", Alaska20[,1:2])
+
+names(Alaska20)<-c("ListID", "FamilyID", "Freq")
+
+Alaska20
+```
+
+
+
+```{r}
+appstatef<-read.csv("AppFamilies.csv")
+App20=count(appstatef)
+App20
+App20<-data.frame("Appalachia State (F)", App20[,1:2])
+
+names(App20)<-c("ListID", "FamilyID", "Freq")
+
+App20
+```
+
+
+
+
+```{r}
+bucknellf<-read.csv("BucknellFamilies.csv")
+Bucknell20=count(bucknellf)
+Bucknell20
+Bucknell20<-data.frame("Bucknell (F)", Bucknell20[,1:2])
+
+names(Bucknell20)<-c("ListID", "FamilyID", "Freq")
+
+Bucknell20
+```
+
+
+```{r}
+centref<-read.csv("CentreFamilies.csv")
+Centre20=count(centref)
+Centre20
+Centre20<-data.frame("Centre (F)", Centre20[,1:2])
+
+names(Centre20)<-c("ListID", "FamilyID", "Freq")
+
+Centre20
+```
+
+
+
+```{r}
+colgatef<-read.csv("ColgateFamilies.csv")
+Colgate20=count(colgatef)
+Colgate20
+Colgate20<-data.frame("Colgate (F)", Colgate20[,1:2])
+
+names(Colgate20)<-c("ListID", "FamilyID", "Freq")
+
+Colgate20
+```
+
+
+
+```{r}
+cornellf<-read.csv("CornellFamilies.csv")
+Cornell20=count(cornellf)
+Cornell20
+Cornell20<-data.frame("Cornell (F)", Cornell20[,1:2])
+
+names(Cornell20)<-c("ListID", "FamilyID", "Freq")
+
+Cornell20
+```
+
+
+
+```{r}
+dartmouthf<-read.csv("DartmouthFamilies.csv")
+Dartmouth20=count(dartmouthf)
+Dartmouth20
+Dartmouth20<-data.frame("Dartmouth (F)", Dartmouth20[,1:2])
+
+names(Dartmouth20)<-c("ListID", "FamilyID", "Freq")
+
+Dartmouth20
+```
+
+
+```{r}
+ecuf<-read.csv("ECUFamilies.csv")
+ECU20=count(ecuf)
+ECU20
+ECU20<-data.frame("Eastern Carolina (F)", ECU20[,1:2])
+
+names(ECU20)<-c("ListID", "FamilyID", "Freq")
+
+ECU20
+```
+
+
+```{r}
+michiganf<-read.csv("MichiganFamilies.csv")
+Michigan20=count(michiganf)
+Michigan20
+Michigan20<-data.frame("Michigan State (F)", Michigan20[,1:2])
+
+names(Michigan20)<-c("ListID", "FamilyID", "Freq")
+
+Michigan20
+```
+
+```{r}
+nkuf<-read.csv("NKUFamilies.csv")
+NKU20=count(nkuf)
+NKU20
+NKU20<-data.frame("NKU (F)", NKU20[,1:2])
+
+names(NKU20)<-c("ListID", "FamilyID", "Freq")
+
+NKU20
+```
+
+
+
+```{r}
+penn_statef<-read.csv("PennStateFamilies.csv")
+PennState20=count(penn_statef)
+PennState20
+PennState20<-data.frame("Penn State (F)", PennState20[,1:2])
+
+names(PennState20)<-c("ListID", "FamilyID", "Freq")
+
+PennState20
+```
+
+
+```{r}
+richmondf<-read.csv("RichmondFamilies.csv")
+Richmond20=count(richmondf)
+Richmond20
+Richmond20<-data.frame("Richmond (F)", Richmond20[,1:2])
+
+names(Richmond20)<-c("ListID", "FamilyID", "Freq")
+
+Richmond20
+```
+
+
+
+```{r}
+siuf<-read.csv("SIUFamilies.csv")
+SIU20=count(siuf)
+SIU20
+SIU20<-data.frame("Southern Illinois (F)", SIU20[,1:2])
+
+names(SIU20)<-c("ListID", "FamilyID", "Freq")
+
+SIU20
+```
+
+
+
+
+```{r}
+duluthf<-read.csv("UMNFamilies.csv")
+UMN20=count(duluthf)
+UMN20
+UMN20<-data.frame("UMN Duluth (F)", UMN20[,1:2])
+
+names(UMN20)<-c("ListID", "FamilyID", "Freq")
+
+UMN20
+```
+
+```{r}
+upennf<-read.csv("UPennFamilies.csv")
+UPenn20=count(upennf)
+UPenn20
+UPenn20<-data.frame("UPenn (F)", UPenn20[,1:2])
+
+names(UPenn20)<-c("ListID", "FamilyID", "Freq")
+
+UPenn20
+```
+
+
+
+
+```{r}
+uwashf<-read.csv("WSUFamilies.csv")
+WSU20=count(uwashf)
+WSU20
+WSU20<-data.frame("University of Washington (F)", WSU20[,1:2])
+
+names(WSU20)<-c("ListID", "FamilyID", "Freq")
+WSU20
+```
+
+
+
+
+```{r}
+wvuf<-read.csv("WVUFamilies.csv")
+WVU20=count(wvuf)
+WVU20
+WVU20<-data.frame("West Virginia University (F)", WVU20[,1:2])
+
+names(WVU20)<-c("ListID", "FamilyID", "Freq")
+
+WVU20
+```
+
+
+```{r}
+uillf<-read.csv("UIllinoisFamilies.csv")
+UIllinois20=count(uillf)
+UIllinois20
+UIllinois20<-data.frame("University of Illinois (F)", UIllinois20[,1:2])
+
+names(UIllinois20)<-c("ListID", "FamilyID", "Freq")
+
+UIllinois20
+```
+
+
+```{r}
+rollinsf<-read.csv("RollinsFamilies.csv")
+Rollins20=count(rollinsf)
+Rollins20
+Rollins20<-data.frame("Rollins College (F)", Rollins20[,1:2])
+
+names(Rollins20)<-c("ListID", "FamilyID", "Freq")
+
+Rollins20
+```
+
+
+```{r}
+wheatonf<-read.csv("WheatonFamilies.csv")
+wheaton20=count(wheatonf)
+wheaton20
+wheaton20<-data.frame("Wheaton College (F)", wheaton20[,1:2])
+
+names(wheaton20)<-c("ListID", "FamilyID", "Freq")
+
+wheaton20
+```
+
+
+```{r}
+uwseattlef<-read.csv("SeattleFamilies.csv")
+uwseattle20=count(uwseattlef)
+uwseattle20
+uwseattle20<-data.frame("UW Seattle (F)", uwseattle20[,1:2])
+
+names(uwseattle20)<-c("ListID", "FamilyID", "Freq")
+
+uwseattle20
+```
+
+```{r}
+wismadisonf<-read.csv("MadisonFamilies.csv")
+umadison20=count(wismadisonf)
+umadison20
+umadison20<-data.frame("UWis Madison (F)", umadison20[,1:2])
+
+names(umadison20)<-c("ListID", "FamilyID", "Freq")
+
+umadison20
+```
+
+
+```{r}
+knoxvillef<-read.csv("UTKnoxFamilies.csv")
+knoxville20=count(knoxvillef)
+knoxville20
+knoxville20<-data.frame("UT Knoxville (F)", knoxville20[,1:2])
+
+names(knoxville20)<-c("ListID", "FamilyID", "Freq")
+
+knoxville20
+```
+
+
+```{r}
+williamscf<-read.csv("WilliamsFamilies.csv")
+williamsc20=count(williamscf)
+williamsc20
+williamsc20<-data.frame("Williams College (F)",williamsc20[,1:2])
+
+names(williamsc20)<-c("ListID", "FamilyID", "Freq")
+
+williamsc20
+```
+
+
+#Bind all the lists together 
+```{r}
+families<-rbind(Alaska20, App20, Bucknell20, Centre20, Colgate20, Cornell20, Dartmouth20, Richmond20, NKU20, Michigan20, UPenn20, PennState20, WSU20, WVU20, UMN20, ECU20, SIU20, UIllinois20, williamsc20, knoxville20, wheaton20, Rollins20, uwseattle20, umadison20)
+
+head(families)
+tail(families)
+families
+```
+
+
+
+#Save this 
+```{r}
+write.csv(families, file= "OrderList_fn6.csv")
+
+```
+
+
+
+
+#Read the list again 
+```{r}
+six<-read.csv("OrderList_fn6.csv")
+six
+#to drop the unneeded and incompatible first column that is just an index column from the file
+six<-six[,2:4]
+head(six)
+```
+
+
+
+#Get the matrix 
+
+```{r}
+ListDataf<-matrify(families)
+ListDataf<-as.matrix(ListDataf)
+ListDataf
+#AuthorData<-matrify(wauthors)
+#AuthorData<-as.matrix(AuthorData)
+#AuthorData
+```
+
+
+
+
+
+
+#Save the matrix
+```{r}
+write.csv(ListDataf, file="OrderListMatrix_fn7.csv")
+```
+
+#Pairwise analysis 
+
+```{r}
+
+jaccard = vegdist(ListDataf, "jaccard")
+jaccard
+
+hist(jaccard, xlim = range(0.0,1.0))
+
+```
+
+
+
+
+#Compare against Simpson diversity index or Shannon diversity index
+
+```{r}
+(simpson<-diversity(ListDataf, index = "simpson"))
+(shannon<-diversity(ListDataf, index = "shannon"))
+par(mfrow = c(1, 2))  # use par to generate panels with 1 row of 2 graphs
+hist(simpson)
+hist(shannon)
+```
+
+
+
+
+
+```{r}
+example_NMDS=metaMDS(ListDataf, k = 2) # Our community-by-species matrix 
+# K=2 is setting the number of reduced dimensions. Increase if high stress is problem. 
+#"The stress, or the disagreement between 2-D configuration and predicted values from the regression"
+
+#A good rule of thumb: stress > 0.05 provides an excellent representation in reduced dimensions, > 0.1 is great, >0.2 is good/ok, and stress > 0.3 provides a poor representation
+
+plot(example_NMDS)
+test.plot<-ordiplot(example_NMDS,type="n") #Ordination plot function especially for congested plots
+points(test.plot, "species", pch=21, col="red", bg="yellow")
+
+test.plot<-ordiplot(example_NMDS,type="n") #Ordination plot function especially for congested plots
+points(test.plot, "sites", col="blue", cex=0.9)
+
+test.plot<-ordiplot(example_NMDS,type="n") #Ordination plot function especially for congested plots
+points(test.plot, "species", pch=21, col="red", bg="yellow")
+text(test.plot, "sites", col="blue", cex=0.9)
+
+test.plot<-ordiplot(example_NMDS,type="n") #Ordination plot function especially for congested plots
+text(test.plot, "species", pch=21, col="red", bg="yellow")
+points(test.plot, "sites", col="blue", cex=0.9)
+
+# 
+#ordiplot(example_NMDS,type="n", display="sites") #Ordination plot function especially for congested plots
+#ordiplot(example_NMDS,type="n", display="species") #Ordination plot function especially for congested plots
+```
+
+```{r}
+#The function adds text or points to ordination plots; lists only
+#Sites only
+plot(example_NMDS)
+
+ordiplot(example_NMDS,type="n") #Ordination plot function especially for congested plots
+orditorp(example_NMDS,display="sites",cex=1.25,air=0.01)
+#species only
+ordiplot(example_NMDS,type="n") #Ordination plot function especially for congested plots
+orditorp(example_NMDS,display="species",col="red",air=0.01) 
+
+#Text for Species and sites together
+ordiplot(example_NMDS,type="n") #Ordination plot function especially for congested plots
+orditorp(example_NMDS,display="species",col="red",air=0.01) 
+orditorp(example_NMDS,display="sites", cex=1.25,air=0.01)
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

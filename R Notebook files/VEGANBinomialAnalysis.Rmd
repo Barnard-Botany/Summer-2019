@@ -1,0 +1,47 @@
+---
+title: "VEGAN Binomial Analysis"
+output: html_notebook
+---
+
+```{r}
+library("plyr")
+#do not install package "dplyr" - it will cause conflict and code won't run properly!
+library("vegan")
+library("labdsv")
+getwd()
+
+```
+
+
+
+```{r}
+all<-read.csv("GeneraListMatrix_fn9.csv")
+class(all)
+dim(all)
+summarize(all)
+all=all[,2:1692]
+head(all)
+totals=colSums(all[,-1])
+totals
+```
+
+
+```{r}
+AppState<-read.csv("AppState_Binomials.csv")
+AppState
+Bucknell<-read.csv("Bucknell_Binomials.csv")
+Bucknell
+two=rbind(AppState, Bucknell)
+
+```
+
+
+```{r}
+two.ab=count(two)
+two.ab
+first_two.ab<-data.frame("first_two", two.ab[,1:2])
+first_two.ab
+names(first_two.ab)<-c("ListID", "SpeciesID", "Freq")
+first_two.ab
+```
+

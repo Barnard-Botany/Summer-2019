@@ -1,0 +1,449 @@
+---
+title: "R Notebook"
+output: html_notebook
+---
+```{r}
+library("plyr")
+#do not install package "dplyr" - it will cause conflict and code won't run properly!
+library("vegan")
+library("labdsv")
+```
+
+
+```{r}
+alaskag<-read.csv("AlaskaGenera.csv")
+Alaska40=count(alaskag)
+Alaska40
+Alaska40<-data.frame("Alaska (G)", Alaska40[,1:2])
+
+names(Alaska40)<-c("ListID", "GeneraID", "Freq")
+
+Alaska40
+```
+
+```{r}
+appstateg<-read.csv("AppStateGenera.csv")
+App40=count(appstateg)
+App40
+App40<-data.frame("Appalachia State (G)", App40[,1:2])
+
+names(App40)<-c("ListID", "GeneraID", "Freq")
+
+App40
+```
+
+
+
+```{r}
+bucknellg<-read.csv("BucknellGenera.csv")
+Bucknell40=count(bucknellg)
+Bucknell40
+Bucknell40<-data.frame("Bucknell (G)", Bucknell40[,1:2])
+
+names(Bucknell40)<-c("ListID", "GeneraID", "Freq")
+
+Bucknell40
+```
+
+
+```{r}
+centreg<-read.csv("CentreGenera.csv")
+Centre40=count(centreg)
+Centre40
+Centre40<-data.frame("Centre (G)", Centre40[,1:2])
+
+names(Centre40)<-c("ListID", "GeneraID", "Freq")
+
+Centre40
+```
+
+
+```{r}
+colgateg<-read.csv("ColgateGenera.csv")
+Colgate40=count(colgateg)
+Colgate40
+Colgate40<-data.frame("Colgate (G)", Colgate40[,1:2])
+
+names(Colgate40)<-c("ListID", "GeneraID", "Freq")
+
+Colgate40
+```
+
+```{r}
+cornellg<-read.csv("CornellGenera.csv")
+Cornell40=count(cornellg)
+Cornell40
+Cornell40<-data.frame("Cornell (G)", Cornell40[,1:2])
+
+names(Cornell40)<-c("ListID", "GeneraID", "Freq")
+
+Cornell40
+```
+
+
+```{r}
+dartmouthg<-read.csv("DartmouthGenera.csv")
+Dartmouth40=count(dartmouthg)
+Dartmouth40
+Dartmouth40<-data.frame("Dartmouth (G)", Dartmouth40[,1:2])
+
+names(Dartmouth40)<-c("ListID", "GeneraID", "Freq")
+
+Dartmouth40
+```
+
+
+```{r}
+ecug<-read.csv("ECUGenera.csv")
+ECU40=count(ecug)
+ECU40
+ECU40<-data.frame("Eastern Carolina (G)", ECU40[,1:2])
+
+names(ECU40)<-c("ListID", "GeneraID", "Freq")
+
+ECU40
+```
+
+```{r}
+michigang<-read.csv("MichiganGenera.csv")
+Michigan40=count(michigang)
+Michigan40
+Michigan40<-data.frame("Michigan State (G)", Michigan40[,1:2])
+
+names(Michigan40)<-c("ListID", "GeneraID", "Freq")
+
+Michigan40
+```
+
+```{r}
+nkug<-read.csv("NKUGenera.csv")
+NKU40=count(nkug)
+NKU40
+NKU40<-data.frame("NKU (G)", NKU40[,1:2])
+
+names(NKU40)<-c("ListID", "GeneraID", "Freq")
+
+NKU40
+```
+
+
+```{r}
+penn_stateg<-read.csv("PennStateGenera.csv")
+PennState40=count(penn_stateg)
+PennState40
+PennState40<-data.frame("Penn State (G)", PennState40[,1:2])
+
+names(PennState40)<-c("ListID", "GeneraID", "Freq")
+
+PennState40
+```
+
+
+```{r}
+richmondg<-read.csv("RichmondGenera.csv")
+Richmond40=count(richmondg)
+Richmond40
+Richmond40<-data.frame("Richmond (G)", Richmond40[,1:2])
+
+names(Richmond40)<-c("ListID", "GeneraID", "Freq")
+
+Richmond40
+```
+
+
+```{r}
+siug<-read.csv("SIUGenera.csv")
+SIU40=count(siug)
+SIU40
+SIU40<-data.frame("Southern Illinois (G)", SIU40[,1:2])
+
+names(SIU40)<-c("ListID", "GeneraID", "Freq")
+
+SIU40
+```
+
+
+
+```{r}
+duluthg<-read.csv("UMNGenera.csv")
+UMN40=count(duluthg)
+UMN40
+UMN40<-data.frame("UMN Duluth (G)", UMN40[,1:2])
+
+names(UMN40)<-c("ListID", "GeneraID", "Freq")
+
+UMN40
+```
+
+
+```{r}
+upenng<-read.csv("UPennGenera.csv")
+UPenn40=count(upenng)
+UPenn40
+UPenn40<-data.frame("UPenn (G)", UPenn40[,1:2])
+
+names(UPenn40)<-c("ListID", "GeneraID", "Freq")
+
+UPenn40
+```
+
+
+```{r}
+uwashg<-read.csv("WSUGenera.csv")
+WSU40=count(uwashg)
+WSU40
+WSU40<-data.frame("University of Washington (G)", WSU40[,1:2])
+
+names(WSU40)<-c("ListID", "GeneraID", "Freq")
+WSU40
+```
+
+
+```{r}
+wvug<-read.csv("WVUGenera.csv")
+WVU40=count(wvug)
+WVU40
+WVU40<-data.frame("West Virginia University (G)", WVU40[,1:2])
+
+names(WVU40)<-c("ListID", "GeneraID", "Freq")
+
+WVU40
+```
+
+
+```{r}
+uillg<-read.csv("UIllinoisGenera.csv")
+UIllinois40=count(uillg)
+UIllinois40
+UIllinois40<-data.frame("University of Illinois (G)", UIllinois40[,1:2])
+
+names(UIllinois40)<-c("ListID", "GeneraID", "Freq")
+
+UIllinois40
+```
+
+
+```{r}
+rollinsg<-read.csv("RollinsGenera.csv")
+Rollins40=count(rollinsg)
+Rollins40
+Rollins40<-data.frame("Rollins College (G)", Rollins40[,1:2])
+
+names(Rollins40)<-c("ListID", "GeneraID", "Freq")
+
+Rollins40
+```
+
+
+```{r}
+wheatong<-read.csv("WheatonGenera.csv")
+wheaton40=count(wheatong)
+wheaton40
+wheaton40<-data.frame("Wheaton College (G)", wheaton40[,1:2])
+
+names(wheaton40)<-c("ListID", "GeneraID", "Freq")
+
+wheaton40
+```
+
+```{r}
+uwseattleg<-read.csv("SeattleGenera.csv")
+uwseattle40=count(uwseattleg)
+uwseattle40
+uwseattle40<-data.frame("UW Seattle (G)", uwseattle40[,1:2])
+
+names(uwseattle40)<-c("ListID", "GeneraID", "Freq")
+
+uwseattle40
+```
+
+```{r}
+wismadisong<-read.csv("MadisonGenera.csv")
+umadison40=count(wismadisong)
+umadison40
+umadison40<-data.frame("UWis Madison (G)", umadison40[,1:2])
+
+names(umadison40)<-c("ListID", "GeneraID", "Freq")
+
+umadison40
+```
+
+```{r}
+knoxvilleg<-read.csv("UTKnoxGenera.csv")
+knoxville40=count(knoxvilleg)
+knoxville40
+knoxville40<-data.frame("UT Knoxville (G)", knoxville40[,1:2])
+
+names(knoxville40)<-c("ListID", "GeneraID", "Freq")
+
+knoxville40
+```
+
+```{r}
+williamscg<-read.csv("WilliamsGenera.csv")
+williamsc40=count(williamscg)
+williamsc40
+williamsc40<-data.frame("Williams College (G)",williamsc40[,1:2])
+
+names(williamsc40)<-c("ListID", "GeneraID", "Freq")
+
+williamsc40
+```
+
+
+
+```{r}
+iowag<-read.csv("IowaGenera.csv")
+iowa40=count(iowag)
+iowa40
+iowa40<-data.frame("University of Iowa (G)",iowa40[,1:2])
+
+names(iowa40)<-c("ListID", "GeneraID", "Freq")
+
+iowa40
+```
+
+```{r}
+holyokeg<-read.csv("MountHolyokeGenera.csv")
+holyoke40=count(holyokeg)
+holyoke40
+holyoke40<-data.frame("Mt. Holyoke (G)", holyoke40[,1:2])
+
+names(holyoke40)<-c("ListID", "GeneraID", "Freq")
+
+holyoke40
+```
+
+
+
+#Bind all the lists together 
+```{r}
+genera<-rbind(Alaska40, App40, Bucknell40, Centre40, Colgate40, Cornell40, Dartmouth40, Richmond40, NKU40, Michigan40, UPenn40, PennState40, WSU40, WVU40, UMN40, ECU40, SIU40, UIllinois40, williamsc40, knoxville40, Rollins40, uwseattle40, umadison40, iowa40, holyoke40, wheaton40)
+
+
+head(genera)
+tail(genera)
+genera
+```
+
+
+
+
+```{r}
+write.csv(genera, file="GeneraList_fn8.csv")
+```
+
+#Read the list again 
+```{r}
+seven<-read.csv("GeneraList_fn8.csv")
+seven
+#to drop the unneeded and incompatible first column that is just an index column from the file
+seven<-seven[,2:4]
+head(seven)
+```
+
+
+#Get the matrix 
+
+```{r}
+ListDatag<-matrify(genera)
+ListDatag<-as.matrix(ListDatag)
+ListDatag
+#AuthorData<-matrify(wauthors)
+#AuthorData<-as.matrix(AuthorData)
+#AuthorData
+```
+
+
+
+#Save the matrix
+```{r}
+write.csv(ListDatag, file="GeneraListMatrix_fn9.csv")
+```
+
+
+
+#Pairwise analysis 
+
+```{r}
+
+jaccard = vegdist(ListDatag, "jaccard")
+jaccard
+
+hist(jaccard, xlim = range(0.0,1.0))
+
+```
+
+
+
+```{r}
+(simpson<-diversity(ListDatag, index = "simpson"))
+(shannon<-diversity(ListDatag, index = "shannon"))
+par(mfrow = c(1, 2))  # use par to generate panels with 1 row of 2 graphs
+hist(simpson)
+hist(shannon)
+```
+
+```{r}
+example_NMDS=metaMDS(ListDatag, k = 2) # Our community-by-species matrix 
+# K=2 is setting the number of reduced dimensions. Increase if high stress is problem. 
+#"The stress, or the disagreement between 2-D configuration and predicted values from the regression"
+
+#A good rule of thumb: stress > 0.05 provides an excellent representation in reduced dimensions, > 0.1 is great, >0.2 is good/ok, and stress > 0.3 provides a poor representation
+
+plot(example_NMDS)
+test.plot<-ordiplot(example_NMDS,type="n") #Ordination plot function especially for congested plots
+points(test.plot, "species", pch=21, col="red", bg="yellow")
+
+test.plot<-ordiplot(example_NMDS,type="n") #Ordination plot function especially for congested plots
+points(test.plot, "sites", col="blue", cex=0.9)
+
+test.plot<-ordiplot(example_NMDS,type="n") #Ordination plot function especially for congested plots
+points(test.plot, "species", pch=21, col="red", bg="yellow")
+text(test.plot, "sites", col="blue", cex=0.9)
+
+test.plot<-ordiplot(example_NMDS,type="n") #Ordination plot function especially for congested plots
+text(test.plot, "species", pch=21, col="red", bg="yellow")
+points(test.plot, "sites", col="blue", cex=0.9)
+
+#test.plot<- ordiplot(example_NMDS,type="n", display="sites") #Ordination plot function especially for congested plots
+#test.plot<- ordiplot(example_NMDS,type="n", display="species") #Ordination plot function especially for congested plots
+```
+
+```{r}
+#The function adds text or points to ordination plots; lists only
+#Sites only
+plot(example_NMDS)
+
+ordiplot(example_NMDS,type="n") #Ordination plot function especially for congested plots
+orditorp(example_NMDS,display="sites",cex=1.25,air=0.01)
+#species only
+ordiplot(example_NMDS,type="n") #Ordination plot function especially for congested plots
+orditorp(example_NMDS,display="species",col="red",air=0.01) 
+
+#Text for Species and sites together
+ordiplot(example_NMDS,type="n") #Ordination plot function especially for congested plots
+orditorp(example_NMDS,display="species",col="red",air=0.01) 
+orditorp(example_NMDS,display="sites", cex=1.25,air=0.01)
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
