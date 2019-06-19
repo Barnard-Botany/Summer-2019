@@ -2,6 +2,10 @@ Summer 2019
 Sharing, creating and working with Aneeza - Notebooks, data, output
 
 
+<<<<<<< HEAD
+
+=======
+>>>>>>> 685f31c63805f7419ffa1608e5a9dc341dea9503
 #Use your judgment and be ambitious about learning new code and commands to improve commands
 #If you get stuck early, middle or late of figuring things out, Google aggressively!
 # And, possibly we can set up a time to Skype
@@ -31,7 +35,11 @@ I would recommend using stuff from our Digital Lab 4, when we learned these thin
 
 
 
+<<<<<<< HEAD
+Once you have complete set of lists that add these six to what Caroline used last summer -- then you can start re-doing some of her Vegan analyses. 
+=======
 Once you have complete set of lists that add these six to what Caroline used last summer -- then you can start re-doing some of her Vegan analyses. I've already uploaded some of the notebooks that she used to do this. Always, I encourage thinking about ways to improve them, rather than trying to follow them overly closely. 
+>>>>>>> 685f31c63805f7419ffa1608e5a9dc341dea9503
 
 And, in the meantime, I'll think of some ways to further extend this analysis. 
 
