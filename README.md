@@ -31,7 +31,7 @@ I would recommend using stuff from our Digital Lab 4, when we learned these thin
 
 
 
-Once you have complete set of lists that add these six to what Caroline used last summer -- then you can start re-doing some of her Vegan analyses. 
+Once you have complete set of lists that add these six to what Caroline used last summer -- then you can start re-doing some of her Vegan analyses. I've already uploaded some of the notebooks that she used to do this. Always, I encourage thinking about ways to improve them, rather than trying to follow them overly closely. 
 
 And, in the meantime, I'll think of some ways to further extend this analysis. 
 
