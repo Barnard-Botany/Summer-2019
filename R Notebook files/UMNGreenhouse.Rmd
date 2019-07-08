@@ -1,0 +1,75 @@
+---
+title: "UMNGreenhouse"
+output: html_notebook
+---
+
+```{r}
+thepage = readLines('http://www.d.umn.edu/biology/affiliatedResources/greenhouse/inventory/view.html')
+
+```
+
+
+```{r}
+grep('Genus/Species', thepage)
+```
+
+
+
+```{r}
+thepage[127:140]
+```
+
+```{r}
+goodlines = '<td><input type="Submit" name=([^<]*) class="button"'
+try = grep(goodlines, thepage, value=TRUE)
+
+```
+
+
+
+```{r}
+try[127:900]
+````
+
+
+
+
+
+
+```{r}
+getexpr = function(s,g)substring(s,g,g+attr(g,'match.length')-1)
+gg = gregexpr(goodlines,try)
+matches = mapply(getexpr, try, gg)
+result = gsub( goodlines,'\\1',matches)
+names(result) = NULL
+```
+
+
+
+```{r}
+UNMgreenhouse = as.data.frame(matrix(result, ncol = 1,byrow=TRUE))
+names(UNMgreenhouse) = c('Genus species')
+head(UNMgreenhouse)
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
