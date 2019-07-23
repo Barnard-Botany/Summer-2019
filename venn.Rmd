@@ -1,0 +1,271 @@
+---
+title: "Venn Diagrams"
+output: html_notebook
+---
+
+
+Venn Diagrams are one of the most intuitive ways to visualize data if you are working with sets or lists --- lists of genes, lists of taxa, etc. 
+
+Yes, there is an R package for it! It's actually a nice one in at least two contrasting ways. 
+
+Helpfully, it lets you avoid a lot of headaches that would be difficult otherwise. For example, you can draw them in way that the circles or ellipses in the diagam (and the intersecting areas) are proportional to the number of members in the sets, subsets and intersections of sets. 
+
+Also helpfully, it requires you to delve into and practice the detail-oriented steps in creating nice graphics, forcing you to look at and learn a lot about codes used for the details of these graph and other graphs. Elements include the typefaces/fonts, sizes of fonts, color of fonts, color of circles, color of fill inside circles, placement of the graphical elements, etc. 
+
+So, install and load the package to get started!
+
+
+```{r}
+library(VennDiagram)
+```
+
+I illustrate how to use it with examples from the BIEN database to show how this package works. 
+
+To learn about the RBIEN package, used to get the data in my example: 
+
+https://cran.r-project.org/web/packages/BIEN/vignettes/BIEN_tutorial.html
+
+
+```{r}
+library(BIEN)
+getwd()
+
+# First, we are going to download plant lists from some Caribbean islands. 
+# The function BIEN_list_country is used to get the data. Notice that you need to set the country and put it in quotation marks. Country is a character variable in the BIEN on-line database. 
+
+Cuba_species_list<-BIEN_list_country(country = "Cuba")
+
+# Your data will download as a dataframe and it should be a big dataframe
+
+class(Cuba_species_list)
+dim(Cuba_species_list)
+
+# Reminder about how to check the colnames (which is variable names) or to get the first six rows:
+
+colnames(Cuba_species_list)
+head(Cuba_species_list)
+```
+
+
+
+```{r}
+# Now a second list - because you usually will want to make at least a two-circle Venn Diagram 
+
+PR_species_list<-BIEN_list_country(country = "Puerto Rico")
+dim(PR_species_list)
+treesPR <-intersect(Gtrees$species, PR_species_list$scrubbed_species_binomial)
+head(treesPR)
+length(treesPR)
+```
+
+
+
+```{r}
+# Here is a third list. It combines the two countries on one island, known by its Spanish name Hispaniola or by its indigenous Taino name Haiti (which is confusing now because of two countries sharing this one one island).
+
+country_vector<-c("Haiti","Dominican Republic")
+HISP_species_list <- BIEN_list_country(country = country_vector)
+```
+
+
+```{r}
+# This next step can be dropped (requiring modification of code below), but it's an interesting way to think about how to confine the analysis to just the trees rather than all the plants. 
+
+# You can use download tree file, which I have cleaned and processed from what was originally downloaded
+# from Global Tree Search, a project of Botanical Gardens Conservation International
+# https://tools.bgci.org/global_tree_search.php
+
+# This file should have been downloaded when you downloaded this notebook from the GitHub repository
+
+Gtrees<-read.csv("C:/Users/hcallaha/Documents/TEACHING/19-20/Lab in Plant Diversity/R Notebooks/trees60089.csv")
+
+Gtrees
+colnames(Gtrees)
+length(Gtrees$species)
+length(HISP_species_list$scrubbed_species_binomial)
+```
+
+```{r}
+# The global list of tree species is more than 60,000 species long and the list for You can see that there are over # Now lets get the intersection of the global list of plants and just the trees
+treesHISP<-intersect(Gtrees$species, HISP_species_list$scrubbed_species_binomial)
+length(treesHISP)
+```
+
+
+In addition to the Documentation for VennDiagram package, also check out this tutorial for Venn Diagramming
+
+https://rstudio-pubs-static.s3.amazonaws.com/13301_6641d73cfac741a59c0a851feb99e98b.html
+
+And here is the paper 
+
+https://bmcbioinformatics.biomedcentral.com/articles/10.1186/1471-2105-12-35
+
+
+
+```{r}
+# Let's draw something a bit dumb, which is just a one-set Venn Diagram, just for Puerto Rico
+areaPR=length(treesPR)
+venn.plot<-draw.single.venn(areaPR, category = "PR", lwd = 2, lty = "solid", col = "black", fill = "green",
+	alpha = 0.5, label.col = "black", cex = 1, 	fontface = "plain", fontfamily = "serif",
+	cat.pos = 0, cat.dist = 0.025, cat.cex = 1, cat.col = "black",
+	cat.fontface = "plain", cat.fontfamily = "serif",
+	cat.just = list(c(0.5, 0.5)),
+	cat.default.pos = "outer", cat.prompts = FALSE, rotation.degree = 0,
+	rotation.centre = c(0.5, 0.5), ind = TRUE)
+
+
+# These next two lines actually draw the diagram that was set up with the lines of code in 107-114
+grid.draw(venn.plot);
+grid.newpage();
+```
+
+```{r}
+# Writing to file - this will export the diagram to your working directory
+# You could then have it if you wanted to insert it into, say, a poster. 
+getwd()
+tiff(filename = "Single_Venn_diagram_PR.tiff", compression = "lzw");
+venn.plot<-draw.single.venn(areaPR, category = "PR", lwd = 2, lty = "solid", col = "black", fill = "green",
+	alpha = 0.5, label.col = "black", cex = 1, 	fontface = "plain", fontfamily = "serif",
+	cat.pos = 0, cat.dist = 0.025, cat.cex = 1, cat.col = "black",
+	cat.fontface = "plain", cat.fontfamily = "serif",
+	cat.just = list(c(0.5, 0.5)),
+	cat.default.pos = "outer", cat.prompts = FALSE, rotation.degree = 0,
+	rotation.centre = c(0.5, 0.5), ind = TRUE)
+grid.draw(venn.plot);
+dev.off();
+```
+
+
+```{r}
+# Before drawing a two set Venn Diagram, we need to set the area of both circles 
+# We re-do the Puerto Rico list, then do the Cuba list
+areaPR=length(treesPR)
+areaCUBA=length(treesCUBA)
+# We also need to figure out the intersection of the two sets. (This is the species on both lists.)
+PRCUBA = intersect(treesPR, treesCUBA)
+cross.area=length(BOTH)
+```
+
+
+
+
+```{r}
+#Now make the pairwise plot. 
+venn.plot2<-draw.pairwise.venn(areaPR, areaCUBA, cross.area, category = rep("", 2),
+    euler.d = TRUE, scaled = TRUE, inverted = FALSE,
+    ext.text = TRUE, ext.percent = rep(0.05, 3), lwd =
+    rep(2, 2), lty = rep("solid", 2), col = rep("black",
+    2), fill = NULL, alpha = rep(0.5, 2), label.col =
+    rep("black", 3), cex = rep(1, 3), fontface =
+    rep("plain", 3), fontfamily = rep("serif", 3), cat.pos
+    = c(-50, 50), cat.dist = rep(0.025, 2), cat.cex =
+    rep(1, 2), cat.col = rep("black", 2), cat.fontface =
+    rep("plain", 2), cat.fontfamily = rep("serif", 2),
+    cat.just = rep(list(c(0.5, 0.5)), 2), cat.default.pos
+    = "outer", cat.prompts = FALSE, ext.pos = rep(0, 2),
+    ext.dist = rep(0, 2), ext.line.lty = "solid",
+    ext.length = rep(0.95, 2), ext.line.lwd = 1,
+    rotation.degree = 0, rotation.centre = c(0.5, 0.5),
+    ind = TRUE, sep.dist = 0.05, offset = 0, cex.prop =
+    NULL, print.mode = "raw", sigdigs = 3)
+grid.draw(venn.plot2);
+grid.newpage();
+```
+
+```{r}
+# Writing to file - this will export the diagram to your working directory
+getwd()
+tiff(filename = "Pairwise_Venn_diagram_PR_CUBA.tiff", compression = "lzw");
+grid.draw(venn.plot2);
+dev.off();
+```
+
+
+```{r}
+# Let's just get a sub-set of one of this lists, so it should be a sub-set of the larger list
+# At the same time, we will compare the two lists
+sub<-treesCUBA[1:100]
+area3<-length(sub)
+int12<-intersect(treesCUBA, treesPR)
+n12<-length(int12)
+int13<-intersect(treesCUBA, sub)
+n13<-length(int13)
+int23<-intersect(treesPR, sub)
+n23<-length(int23)
+# Notice this next line, which is for a three way comparison
+int123<-Reduce(intersect, list(treesCUBA,treesPR,sub))
+# We can get a list of what's in all three lists
+int123
+n123<-length(int123)
+venn.plot3<-draw.triple.venn(areaPR, areaCUBA, area3, n12, n23, n13, n123, category =
+    rep("", 3), rotation = 1, reverse = FALSE, euler.d =
+    TRUE, scaled = TRUE, lwd = rep(2, 3), lty =
+    rep("solid", 3), col = rep("black", 1), fill = c("skyblue", "pink1", 
+    "mediumorchid"), 
+    alpha = rep(0.5, 3), label.col = rep("black", 7), cex
+    = rep(1, 7), fontface = rep("plain", 7), fontfamily =
+    rep("serif", 7), cat.pos = c(-40, 40, 180), cat.dist =
+    c(0.05, 0.05, 0.025), cat.col = rep("black", 3),
+    cat.cex = rep(1, 3), cat.fontface = rep("plain", 3),
+    cat.fontfamily = rep("serif", 3), cat.just =
+    list(c(0.5, 1), c(0.5, 1), c(0.5, 0)), cat.default.pos
+    = "outer", cat.prompts = FALSE, rotation.degree = 0,
+    rotation.centre = c(0.5, 0.5), ind = TRUE, sep.dist =
+    0.05, offset = 0, cex.prop = NULL, print.mode = "raw",
+    sigdigs = 3, direct.area = FALSE, area.vector = 0)
+
+
+
+grid.draw(venn.plot3);
+grid.newpage();
+
+```
+
+
+
+```{r}
+# If you look at the result, you will see that there are 598 species of tree shared between 
+# Puerto Rico and Cuba. Of the 100 species arbitrarily subsetted, 30 are shared
+# Writing to file - this will export the diagram to your working directory
+getwd()
+tiff(filename = "Three-way_Venn_diagram.tiff", compression = "lzw");
+grid.draw(venn.plot3);
+dev.off();
+```
+
+
+```{r}
+areaSD<-length(treesSD)
+int12<-intersect(treesCUBA, treesPR)
+n12<-length(int12)
+int13<-intersect(treesCUBA, treesSD)
+n13<-length(int13)
+int23<-intersect(treesPR, treesSD)
+n23<-length(int23)
+int123<-Reduce(intersect, list(treesCUBA,treesPR,treesSD))
+int123
+n123<-length(int123)
+venn.plot3<-draw.triple.venn(areaPR, areaCUBA, areaSD, n12, n23, n13, n123, category =
+    rep("", 3), rotation = 1, reverse = FALSE, euler.d =
+    TRUE, scaled = TRUE, lwd = rep(2, 3), lty =
+    rep("solid", 3), col = rep("black", 3), fill = NULL,
+    alpha = rep(0.5, 3), label.col = rep("black", 7), cex
+    = rep(1, 7), fontface = rep("plain", 7), fontfamily =
+    rep("serif", 7), cat.pos = c(-40, 40, 180), cat.dist =
+    c(0.05, 0.05, 0.025), cat.col = rep("black", 3),
+    cat.cex = rep(1, 3), cat.fontface = rep("plain", 3),
+    cat.fontfamily = rep("serif", 3), cat.just =
+    list(c(0.5, 1), c(0.5, 1), c(0.5, 0)), cat.default.pos
+    = "outer", cat.prompts = FALSE, rotation.degree = 0,
+    rotation.centre = c(0.5, 0.5), ind = TRUE, sep.dist =
+    0.05, offset = 0, cex.prop = NULL, print.mode = "raw",
+    sigdigs = 3, direct.area = FALSE, area.vector = 0)
+
+
+
+grid.draw(venn.plot3);
+# This one is black and white. None of them have had legends. 
+# So now you'll want to think about how to choose colors, and to write captions and add legends. 
+
+```
+
