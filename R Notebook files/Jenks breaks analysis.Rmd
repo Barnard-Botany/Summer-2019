@@ -1,0 +1,51 @@
+---
+title: "Jenks breaks analysis"
+output: html_notebook
+---
+
+This is a demonstration of how this works, using lists of species from small and large countries in North American and the Caribbean. You should be able to follow along using 
+
+
+```{r}
+#You need some data. I just got these to use as an example 
+Natchecklists<-BIEN_list_country(c("Grenada", "Bermuda", "Jamaica", "Aruba", "Barbados", "Cuba", "Haiti", "Bahamas", "Belize", "Dominica", "Nicaragua", "Honduras", "Mexico", "El Salvador", "Guatamala", "Costa Rica", "Canada", "United States", "Guadalupe", "Panama", "Curacao"))
+#The line below will list out each country's species richness (which is just total number of species). 
+(richness<-table(Natchecklists$country))
+# Using the line below, can sort from lowest to highest and then print data in results to eye-ball data sort(richness)
+
+```
+
+```{r}
+# The function "table" gives a table, not a dataframe as revealed by using the line below
+class(richness)
+# You can coerce the table into a dataframe. plotJenks will only work with a dataframe. 
+Sprichness<-as.data.frame(richness)
+# You can see what's in the data
+head(Sprichness)
+tail(Sprichness)
+```
+
+
+```{r}
+# The plotJenks.R file must be downloaded (from GitHub)
+# Make sure that the file is saved to an appropriate directly. 
+# Then opened it in R studio (it will be open in another tab in R Studio)
+# The function "plotJenks" depends on having the R package classInt installed and loaded 
+# It should be in base R. Load it.
+library(classInt)
+```
+
+
+```{r}
+# The data that we want to cluster into three groups is the Freq data, which is the species richness
+# Could re-name that variable for clarity
+NationRichness<-Sprichness$Freq
+# We want to sort the countries into high, medium and low, and the function makes a plot to visualize
+res<- plotJenks(NationRichness, n=3, brks.cex=0.70, top.margin=10, dist=5)
+# If you want the data listed, then ask for it
+res
+#Not completely automatic because now we've lost the Var1 which gives the country names
+#With a small data set, can go through manually to figure out which samples are within which cluster
+```
+
+
