@@ -1,0 +1,232 @@
+---
+title: "Phylogenies - Using Street Tree Data "
+output: html_notebook
+---
+
+####LEARNING WITH TREE DATA 
+
+
+I am going to do this with the class, starting with NYC data, but I am excited that the lesson could be adapted for many different cities, which may be of interest to Barnard students but would also make the lesson appealing to people in other parts of the country. :
+
+PORTLAND OREGON
+
+https://www.portlandoregon.gov/parks/article/620066 (This is an excel file)
+
+PHILADELPHIA 
+
+http://data.phl.opendata.arcgis.com/datasets/957f032f9c874327a1ad800abd887d17_0.csv
+
+
+PROVIDENCE
+
+https://catalog.data.gov/dataset/providence-tree-inventory/resource/d4090ae5-42c1-4352-bd93-f2f64e0a4b2e
+
+WASHINGTON D.C.
+
+https://opendata.arcgis.com/datasets/f6c3c04113944f23a7993f2e603abaf2_23.csv
+
+We can go back to our initial huge data set of NYC Street trees.
+Also, as previously, want to teach about trait data using BIEN database. 
+
+```{r}
+ALLtrees <- read.csv("https://data.cityofnewyork.us/api/views/5rq2-4hqu/rows.csv?accessType=DOWNLOAD
+", header=TRUE)
+write.csv(ALLtrees,'2015StreetTreesCensus_TREES.csv')
+ALLtrees=read.csv('2015StreetTreesCensus_TREES.csv')
+#Now let's use a command to examine the dimensions of the data
+dim(ALLtrees)
+# Wow. There are 683,788 rows in this data set. One row for each street tree. There are also 42 columns.
+#Let's look through all 42 column headings
+class(ALLtrees)
+#Let's look through all 42 column headings
+colnames(ALLtrees)
+# Let's look at the first six lines of data
+head(ALLtrees)
+```
+
+
+
+# GETTING A SPECIES LIST, CHECKING TAXONOMY, PHYLOGENIZE
+
+```{r}
+library(plyr)
+count(ALLtrees$spc_latin)
+count(ALLtrees$spc_common)
+```
+
+There are 31,619 instances where the species name is missing? Why?
+
+One reason is that dead trees were inventoried (as stumps or dead) but not purposefully left unidentified to species. 
+
+So, we can subset the data to just those species that are alive. While we are at it, we can also limit ourselves to the just the first 28 columns of data (the second 28 area a lot about stewardship and management of the trees) 
+```{r}
+dim(ALLtrees)
+Strees=subset(ALLtrees, status=="Alive", select=c(created_at:spc_common, address:y_sp))
+Strees=as.data.frame(Strees)
+dim(Strees)
+```
+
+Another approach would be just to get rid of all of the instances where there is no species name listed, as follows:
+
+```{r}
+dim(ALLtrees)
+Strees=subset(ALLtrees, spc_common!="", select=c(created_at:spc_common, address:y_sp))
+Strees=as.data.frame(Strees)
+dim(Strees)
+```
+
+This second procedure showed that there were exactly four instances city-wide where there is a missing species name even though the tree is alive. This small number of missing data could cause problems for later analyses, so it's good have eliminated them from the data set. 
+
+
+Now let's look at what's left. What species are present? Each species is a level, so let's use the command "level" to look at that. 
+
+```{r}
+head(Strees)
+levels(Strees$spc_latin);levels(Strees$spc_common)
+```
+
+What if we wanted, instead, to get not just a list of each species and how many trees there are of that species? This is a frequency table, obtained using the command "count" on the variable that we want to examine. Here, I've done it on the latin name. Would you get the same result if you instead did it on the common name? 
+
+```{r}
+freqtable=count(Strees$spc_latin)
+colnames(freqtable)[colnames(freqtable)=="x"] <- "scientificName"
+freqtable
+```
+
+
+
+Now let's look at this list of frequencies:
+
+```{r}
+#This would add up all the frequencies of each tree; it should sum to the total number of trees in the city
+sum(freqtable$freq)
+#How common is the tree that is is most common?
+max(freqtable$freq)
+#How rare is the one that's most rare? 
+min(freqtable$freq)
+median(freqtable$freq)
+#What if we made a histogram?
+hist(freqtable$freq)
+hist(freqtable$freq, freq=F)
+
+```
+
+## What if we want to look at the list broken down by higher-rank taxa (such as genus or family)?
+## Can do this with taxize but I also learned about traitdataform which might be useful for working with both trait data and phylogenetic data at the same time. 
+
+
+```{r}
+#library(taxize)
+#Another lesson teaches how to do classification function, from the TAXIZE package. 
+#This is a new package that looks at trait data and phylogenetic data integrated together
+library(traitdataform)
+#class(freqtable)
+#freqtable=as.data.frame(freqtable)
+#class(freqtable)
+```
+
+
+```{r}
+head(freqtable)
+class(freqtable)
+head(freqtable)
+trees.NYC<-standardize_taxa(freqtable, return = c("phylum", "class", "order", "family", "genus"), resolve_synonyms = TRUE)
+head(trees.NYC)
+tail(trees.NYC)
+```
+
+
+
+
+
+```{r}
+freqtreeclass=count(trees.NYC$class)
+freqtreeclass
+freqtreefamily=count(trees.NYC$family)
+freqtreefamily
+freqtreegenus=count(trees.NYC$genus)
+freqtreegenus
+
+```
+
+
+In the past, I've taught Phylomatic, but now there are more recent options, most recently one that includes not just angiosperms and gymnosperms many ferns and other seedless vascular plants. (There was first S.Phylomaker for seed plants and now there is V.Phylomaker for vascular plants). 
+This package sounds like the most comprehensive as of mid-2019, and the R package is straightforward. 
+
+Here is a link to the paper http://doi.org/10.1111/ecog.04434
+
+To install a package offered by the developer personally, from their GitHub repository, can try this:
+
+```{r}
+devtools::install_github("jinyizju/V.PhyloMaker")
+```
+
+Or another option is this:
+
+```{r}
+install.packages("remotes")
+remotes::install_github("jinyizju/V.PhyloMaker")
+```
+
+Then load the package:
+
+```{r}
+library("V.PhyloMaker")
+```
+
+
+Here is an example from the package developer (i.e., tutorial)
+
+```{r}
+getwd()
+#This example will only work if you get the file and put it in the right working directory
+#(and adjust the path to import form what is below)
+example  <-  read.csv("C:/Users/hcallaha/Documents/TEACHING/19-20/Lab in Plant Diversity/R Notebooks/V.phylomaker/Example_species_list.csv")
+#once you have the file and have named it "example", see that it is being read in below as the first argument in using the function phylomaker. Note that phylomaker also needs the tree file and a nodes file, which are loaded by default when loading the V.Phylomaker  package 
+tree.a   <-   phylo.maker(sp.list = example,  tree = GBOTB.extended,  nodes = nodes.info.1, scenarios="S3")
+write.tree(tree.a$scenario.3, "Figure.1a.tre")
+plot(tree.a$scenario.3, type = "fan")
+```
+
+
+So, above, we generated a list with higher level taxonomy for NYC street trees. Narrowing it to include just species name, genus and family is what this package requires, and I believe the columns where the names of the variables are kept must be in the correct order and column names must also  match the packages requirements. 
+
+It does appear that V.Phylo will work if you have a genus name in the species column (without a specific epithet, i.e., not a species binomial) but then the file needs to repeat the genus name in the genus column and the family name in the family column. 
+
+
+```{r}
+head(trees.NYC)
+phylotrees.NYC<-trees.NYC[c(2, 10, 9)]
+names(phylotrees.NYC)[1]<-"species"
+head(phylotrees.NYC)
+```
+
+
+
+
+
+
+
+```{r}
+tree.NYC  <-   phylo.maker(sp.list = phylotrees.NYC,  tree = GBOTB.extended,  nodes = nodes.info.1, scenarios="S3")
+#So what this generates is  not a phylo object and not a dataframe, but a two-object list)
+#The two objects in this class are, first, the phylo object
+# ..... tree.NYC$scenario.3
+# The second is a dataframe of the species
+# ........... tree.NYC$species.list
+
+
+```
+
+```{r}
+write.tree(tree.NYC$scenario.3, "NYCtree.tre")
+#If you look at it in Notepad or similar, you will see that it has the Newick code, 
+#including branch lengths throughout the tree
+#We can roughly plot this here, but really will want to use something like FigTree or iTOL to create better figures, so we need to export the file with the tree information
+plot(tree.NYC$scenario.3,no.margin=TRUE,edge.width=2, type = "fan")
+```
+
+
+Maybe challenge them to do an analysis where they break down trees by borough, and do a phylogeny for an assigned borough?
+
+Ideally do an analysis PICANTE style, where there is coding of trees by most common.
